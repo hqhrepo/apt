@@ -152,6 +152,25 @@ Description: the advanced packaging library from Debian
 Name: APT 0.7 Transitional (lib)
 Tag: purpose::library, role::developer
 
+Package: coreutils-bin
+Version: 8.31-1
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 7320
+Replaces: shell-cmds (<< 118-5), coreutils (<= 7.2-9)
+Provides: dirname, kill, mktemp, su
+Filename: debs/coreutils-bin_8.31-1_iphoneos-arm.deb
+Size: 679670
+MD5sum: d3597ea74d7a45a9383cf20b9ff30c3e
+SHA1: 7133ed7adeba9ad2ad099ee135fd517cb6c88e18
+Section: Utilities
+Priority: required
+Homepage: http://www.gnu.org/software/coreutils/
+Description: just the /bin folder from GNU coreutils
+Name: Core Utilities (/bin)
+Tag: purpose::console, role::hacker
+
 Package: ca-certificates
 Version: 0.0.2
 Architecture: all
