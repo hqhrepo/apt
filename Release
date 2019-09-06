@@ -1,0 +1,8 @@
+Origin: HqH_APT
+Label: HqH_APT
+Suite: stable
+Version: 1.0
+Codename: fcahapt 
+Architectures: iphoneos-arm
+Components: main
+Description: RepoStory
