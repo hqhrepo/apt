@@ -1607,7 +1607,7 @@ Installed-Size: 6440
 Pre-Depends: dpkg (>= 1.14.25-8)
 Depends: ca-certificates
 Conflicts: openssl (<<1.0.2q)
-Filename: https://apt.bingner.com/debs/1443.00/libssl1.0_1.0.2s-1_iphoneos-arm.deb
+Filename: debs/libssl1.0_1.0.2s-1_iphoneos-arm.deb
 Size: 815306
 MD5sum: 77db2446c032e43eee9924a6bbcb39ae
 SHA1: 6b5afd03d23983153e9b4d875e0b047006cbaba2
