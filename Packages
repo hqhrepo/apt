@@ -1,0 +1,5813 @@
+Package: 3proxy
+Version: 0.5.3k-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1456
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/3proxy_0.5.3k-1_iphoneos-arm.deb
+Size: 79514
+MD5sum: a710126c8201ee7ef6b257fd69226dee
+SHA1: d608510f10fbbefc6624ad357cdb44e19456a16f
+Section: Networking
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://3proxy.ru/download/
+Description: tiny free proxy server
+Depiction: http://cydia.saurik.com/info/3proxy/
+Name: 3proxy
+Tag: purpose::daemon, role::hacker
+
+Package: adv-cmds
+Version: 119-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 736
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Provides: ps
+Filename: https://apt.bingner.com/debs/1443.00/adv-cmds_119-1_iphoneos-arm.deb
+Size: 35562
+MD5sum: bc10e7711b5b88fba6a949306f2c2cda
+SHA1: 7ecf92ff1c4a298866285bce9fe8f86fac1093f3
+Section: Administration
+Priority: important
+Multi-Arch: foreign
+Description: finger, fingerd, last, lsvfs, md, ps
+Tag: purpose::console, role::hacker
+
+Package: afpfs-ng
+Version: 0.8.1-1
+Architecture: iphoneos-arm
+Installed-Size: 592
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: gcrypt, readline
+Filename: https://apt.bingner.com/debs/1443.00/afpfs-ng_0.8.1-1_iphoneos-arm.deb
+Size: 51144
+MD5sum: 35e9f56a07624ba2e06290580d194678
+SHA1: 664edbbaf53412e7d7e8c8e2e459b50a03018412
+Section: Networking
+Priority: optional
+Homepage: http://sites.google.com/site/alexthepuffin/home
+Description: an open source client for Apple Filing Protocol
+Author: Alex deVries <alexthepuffin@gmail.com>
+Tag: purpose::console, role::hacker
+
+Package: apr
+Version: 1.6.3-4
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1176
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: apr-lib
+Filename: https://apt.bingner.com/debs/1443.00/apr_1.6.3-4_iphoneos-arm.deb
+Size: 86462
+MD5sum: 3543a02122b359e1f99d05efdc7e1e88
+SHA1: bb81214c9b65bf71425cd7d4cd5947eb7b7ae4f5
+Section: Development
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://apr.apache.org/
+Description: platform abstraction library from Apache
+Name: APR
+Tag: purpose::library, role::developer
+
+Package: apr-lib
+Version: 1.6.3-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 520
+Pre-Depends: dpkg (>= 1.14.25-8)
+Replaces: apr (<< 1.3.3-4)
+Filename: https://apt.bingner.com/debs/1443.00/apr-lib_1.6.3-1_iphoneos-arm.deb
+Size: 70802
+MD5sum: a0b82009206ccad622dbdda111e59413
+SHA1: 008952ee6f673d65b6b98f169cb4bc704645a0ff
+Section: Development
+Priority: standard
+Multi-Arch: foreign
+Homepage: http://apr.apache.org/
+Description: just the /usr/lib folder from APR
+Name: APR (/usr/lib)
+Tag: purpose::library, role::developer
+
+Package: apr-util
+Version: 1.6.1-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1472
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: apr, berkeleydb, expat, sqlite3
+Filename: https://apt.bingner.com/debs/1443.00/apr-util_1.6.1-2_iphoneos-arm.deb
+Size: 121404
+MD5sum: 2f3d95ee2b184122421c1bdf8a122a00
+SHA1: ed5d6a25d739e5ce098f6ca9e28dee83f03d9d2f
+Section: Development
+Priority: standard
+Description: data structures and utilities for Apache APR
+Name: APR-util
+Tag: purpose::library, role::developer
+
+Package: apt
+Version: 1.8.2-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1784
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libapt (>= 1.8.2), apt-key, berkeleydb, apt1.4 (>= 1:0)
+Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt1.8
+Breaks: cydia (<< 1.1.32~b19)
+Replaces: apt1.8, apt1.4
+Provides: apt1.8 (=1.8.2)
+Filename: https://apt.bingner.com/debs/1443.00/apt_1.8.2-2_iphoneos-arm.deb
+Size: 147042
+MD5sum: db7c501190ac47d30dfc2090b6845496
+SHA1: 92d64aeda72356c141f095d0c4e47be35db4933f
+Section: Packaging
+Priority: standard
+Description: the advanced packaging tool from Debian
+Name: APT
+Tag: purpose::console, role::hacker
+
+Package: apt-key
+Version: 1.8.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 64
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: coreutils, libapt
+Conflicts: apt7-key (<<1:0)
+Breaks: apt7-key (<<1:0)
+Replaces: apt (<< 1:0-1), apt7 (<< 0.7.20.2-4), apt7-key
+Filename: https://apt.bingner.com/debs/1443.00/apt-key_1.8.2-1_iphoneos-arm.deb
+Size: 8732
+MD5sum: b4d6117b30d3e2edb8b4d31b7e87bc7a
+SHA1: 51c366164b7f974ddb33e06c3352a9e439bb1215
+Section: Packaging
+Priority: standard
+Description: repository encryption key management tool
+Name: APT (apt-key)
+Tag: purpose::console, role::hacker
+
+Package: apt-rdepends
+Version: 1.3.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 48
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libapt-pkg-perl
+Filename: https://apt.bingner.com/debs/1443.00/apt-rdepends_1.3.0-1_iphoneos-arm.deb
+Size: 6344
+MD5sum: 5327f0f128301fd8327718912717fbad
+SHA1: e6a62a43938b35de5225c1218ec1afed5917afe9
+Section: Scripting
+Priority: optional
+Description: a Perl script that hooks into APT and recursively finds dependencies.
+Tag: purpose::console, role::hacker
+
+Package: apt1.4
+Version: 1.4.9-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1720
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libapt (>= 1.4.9), apt-key, berkeleydb
+Conflicts: apt7 (<<1:0)
+Filename: https://apt.bingner.com/debs/1443.00/apt1.4_1.4.9-1_iphoneos-arm.deb
+Size: 130916
+MD5sum: 5d62cdac8b39750419db3948d17dbfef
+SHA1: ab47c126b17884e337b916a449d4f0a8532691a2
+Section: Packaging
+Priority: standard
+Description: the advanced packaging tool from Debian
+Name: APT Strict
+Tag: purpose::console, role::hacker
+
+Package: apt1.4
+Version: 1:0
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: apt
+Filename: https://apt.bingner.com/debs/1443.00/apt1.4_0_iphoneos-arm.deb
+Size: 772
+MD5sum: 57c714bd1463bf9d7fcd9e4b9cee55db
+SHA1: 5ace7b6fb0ff569e257ad209a6c907b5aac52478
+Section: Packaging
+Priority: standard
+Description: the advanced packaging tool from Debian
+Name: APT 1.4 Transitional
+Tag: purpose::console, role::hacker
+
+Package: apt7
+Version: 1:0
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: apt1.4
+Filename: https://apt.bingner.com/debs/1443.00/apt7_1:0_iphoneos-arm.deb
+Size: 604
+MD5sum: 86ffb0e8e237830d35de073ac4b5b027
+SHA1: eaaf1153f126fbe975d17e7259a97cfaab14a2a5
+Section: Packaging
+Priority: standard
+Description: the advanced packaging tool from Debian
+Name: APT 0.7 Transitional
+Tag: purpose::console, role::hacker
+
+Package: apt7
+Version: 1:0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: apt1.4
+Conflicts: apt7-key
+Filename: https://apt.bingner.com/debs/1443.00/apt7_1:0-1_iphoneos-arm.deb
+Size: 618
+MD5sum: d081e2f189107b2179cf84e26b367d9b
+SHA1: 7059168551ab6099cbcc267d52de613348e1d427
+Section: Packaging
+Priority: standard
+Description: the advanced packaging tool from Debian
+Name: APT 0.7 Transitional
+Tag: purpose::console, role::hacker
+
+Package: apt7
+Version: 1:0-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: apt1.4
+Filename: https://apt.bingner.com/debs/1443.00/apt7_1:0-2_iphoneos-arm.deb
+Size: 862
+MD5sum: a4a6cd5f40da79835ff2d61acb4bf7ab
+SHA1: 0b4b97912b9877b248d43121831fcfed7e6b715e
+Section: Packaging
+Priority: standard
+Description: the advanced packaging tool from Debian
+Name: APT 0.7 Transitional
+Tag: purpose::console, role::hacker
+
+Package: apt7-key
+Version: 1:0
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Depends: apt-key
+Filename: https://apt.bingner.com/debs/1443.00/apt7-key_1:0_iphoneos-arm.deb
+Size: 590
+MD5sum: d53e3e18db2d0149200b237d0c384ab3
+SHA1: 45660981826693896e8801ec2a52a28bd99cc68b
+Section: Packaging
+Priority: optional
+Description: the advanced packaging library from Debian
+Name: APT 0.7 Transitional (apt-key)
+Tag: purpose::console, role::hacker
+
+Package: apt7-lib
+Version: 1:0
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Depends: libapt
+Filename: https://apt.bingner.com/debs/1443.00/apt7-lib_1:0_iphoneos-arm.deb
+Size: 590
+MD5sum: 5a8ce27956eac5be6621d628238cccae
+SHA1: a9839320d44d799d011e612224a2ced86b07e667
+Section: Packaging
+Priority: optional
+Description: the advanced packaging library from Debian
+Name: APT 0.7 Transitional (lib)
+Tag: purpose::library, role::developer
+
+Package: aptitude
+Version: 0.8.10-2
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 9224
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: boost, cwidget, gettext, libapt, librpmatch, libsigc++, libxapian, ncurses
+Filename: https://apt.bingner.com/debs/1443.00/aptitude_0.8.10-2_iphoneos-arm.deb
+Size: 1061998
+MD5sum: 3d1efbab22536aa0a8b5234cceda21db
+SHA1: 38672df0128a938c30c0989730bc401d4b905c1b
+Section: Packaging
+Priority: optional
+Description: advanced command-line APT frontend
+Name: Aptitude
+Tag: purpose::console, role::hacker
+
+Package: aria2
+Version: 1.34.0-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 6608
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: gettext, libc-ares2, libgmp10, libssh2, libxml2
+Filename: https://apt.bingner.com/debs/1443.00/aria2_1.34.0-1_iphoneos-arm.deb
+Size: 793534
+MD5sum: 20245232d39f1caf41fff56dd3cfbb46
+SHA1: e63cd1444c1973b362e52cff7672470805397b0a
+Section: Networking
+Priority: optional
+Homepage: https://aria2.github.io/
+Description: Downloader with resuming and segmented downloading.
+Name: Aria2
+Tag: purpose::console, role::hacker
+
+Package: aspell
+Version: 0.60.6.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 5352
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/aspell_0.60.6.1-1_iphoneos-arm.deb
+Size: 263748
+MD5sum: e73d8905663ca757e748a0e4912358e5
+SHA1: 4a55d3020e3b5ea418e5ed2c47347780a1826b6b
+Section: Utilities
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://aspell.net/
+Description: command line spell checking engine
+Name: Aspell
+Tag: purpose::console, role::hacker
+
+Package: autoconf
+Version: 2.69-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3696
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: m4
+Filename: debs/1443.00/autoconf_2.69-1_iphoneos-arm.deb
+Size: 272572
+MD5sum: 035d5a59cf9c36427975f4cdff88f1fe
+SHA1: eb41aeee4d0702c8899b09f16ccf8a5a20c5eb2a
+Section: Development
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/autoconf/
+Description: an intricate set of m4 macros
+Name: Autoconf
+Tag: purpose::console, role::hacker
+
+Package: automake
+Version: 1.16.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3120
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: autoconf
+Filename: debs/1443.00/automake_1.16.1-1_iphoneos-arm.deb
+Size: 316116
+MD5sum: 615b34784ec32af0a2da9211e8a31cc9
+SHA1: 0d74d3918e44a5e56fd3fee71dce785e14ca6fb7
+Section: Development
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/automake/
+Description: automatically generate verbose makefiles
+Name: Automake
+Tag: purpose::console, role::hacker
+
+Package: autossh
+Version: 1.4a-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 136
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: openssh
+Filename: debs/1443.00/autossh_1.4a-1_iphoneos-arm.deb
+Size: 10112
+MD5sum: 94503244ca5e9720bce51702a6da43c5
+SHA1: efb5f0901a22e7e7380c0a23e19ac28aa277ddd5
+Section: Networking
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.harding.motd.ca/autossh/
+Description: continually reconnects an ssh session
+Name: Automatic SSH
+Tag: purpose::daemon, role::hacker
+
+Package: axel
+Version: 2.17.2-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 192
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0
+Filename: debs/1443.00/axel_2.17.2-1_iphoneos-arm.deb
+Size: 22328
+MD5sum: 13ad35b0fbebd27b95ea88caa1dbc7fd
+SHA1: a559444f101ff5b329dcc9813f9319e5d1f445d0
+Section: Networking
+Priority: optional
+Homepage: https://github.com/eribertomota/axel
+Description: Light UNIX download accelerator
+Name: Axel
+Tag: purpose::console, role::hacker
+
+Package: base
+Version: 1-5
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 8
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/base_1-5_iphoneos-arm.deb
+Size: 1652
+MD5sum: c0757c1c7591f3e4731c0754d3ff84d5
+SHA1: 50d95c1fadac757b13b63b8efda966f7defef92e
+Section: System
+Priority: required
+Description: underlying system directory structure
+Name: Base Structure
+Tag: purpose::backend, role::hacker
+
+Package: bash
+Version: 5.0.3-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 5368
+Depends: grep, ncurses, readline (>= 8.0), sed
+Filename: https://apt.bingner.com/debs/1443.00/bash_5.0.3-1_iphoneos-arm.deb
+Size: 473052
+MD5sum: 2838dac251dea0af41b12cdb3b02fc48
+SHA1: 5020138fb621b6f4d5649acbc62a6f73cee3a34d
+Section: Terminal_Support
+Priority: required
+Homepage: http://www.gnu.org/software/bash/
+Description: the best shell ever written by Brian Fox
+Name: Bourne-Again SHell
+Tag: purpose::console, role::hacker
+
+Package: bash-completion
+Version: 2.8-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 5880
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/bash-completion_2.8-1_iphoneos-arm.deb
+Size: 144450
+MD5sum: 7600920ac683dac3fe8ab6eac52f0c86
+SHA1: 67134d83aed4b729564b05c9c029ae59e18a0459
+Section: Terminal_Support
+Priority: standard
+Description: Programmable completion for Bash 4.1+
+Name: Bash Completion
+Tag: purpose::console, role::hacker
+
+Package: basic-cmds
+Version: 48-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 424
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/basic-cmds_48-1_iphoneos-arm.deb
+Size: 10712
+MD5sum: 21ada9a886c6e0aaf98f3b95dd595d4d
+SHA1: 0c5a96633a0458d3f859bf88663905733d005a25
+Section: Utilities
+Priority: important
+Multi-Arch: foreign
+Description: msg, uudecode, uuencode, write
+Tag: purpose::console, role::hacker
+
+Package: bc
+Version: 1.06-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 448
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/bc_1.06-1_iphoneos-arm.deb
+Size: 44648
+MD5sum: a465f6494077d9365e9bbb6e61f323ee
+SHA1: cde15dd18b6eb3cb43a062e94c6550a1e0213fba
+Section: Utilities
+Priority: important
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/bc/
+Description: arbitrary precision console calculator
+Tag: purpose::console, role::hacker
+
+Package: berkeleydb
+Version: 6.2.32-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 5520
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/berkeleydb_6.2.32-1_iphoneos-arm.deb
+Size: 690482
+MD5sum: 14e0d10e443029d9b5c7451aacf7e54a
+SHA1: d1be52abda12fca14eeb9dd58dd01cdd0a15204b
+Section: Data_Storage
+Priority: standard
+Homepage: http://www.oracle.com/technology/products/berkeley-db/index.html
+Description: Oracle's embeddable database engine
+Name: Berkeley DB
+Tag: purpose::library, role::developer
+
+Package: bind
+Version: 9.11.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 174032
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0, readline
+Filename: debs/1443.00/bind_9.11.5-1_iphoneos-arm.deb
+Size: 6357666
+MD5sum: 2a6e60e04dcebb77ad53a860fac55047
+SHA1: 163163503aadf884ea1b9a3e96fa9b26e89ac59d
+Section: Networking
+Priority: important
+Homepage: http://www.isc.org/products/BIND/
+Description: the standard DNS server used by millions
+Name: BIND DNS Server
+Tag: purpose::console, purpose::daemon, role::hacker
+
+Package: bison
+Version: 3.0.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2008
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/bison_3.0.5-1_iphoneos-arm.deb
+Size: 237424
+MD5sum: 25286637904f7e13caaf497f17e88fab
+SHA1: b30867764cb83873a46c4cfb2aa5130ae335c1bd
+Section: Development
+Priority: standard
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/bison/
+Description: GNU parser generator derived from Yacc
+Name: Bison
+Tag: purpose::console, role::developer
+
+Package: bitchx
+Version: 1.2.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 11728
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: debs/1443.00/bitchx_1.2.1-1_iphoneos-arm.deb
+Size: 1073480
+MD5sum: b9397167b1a4c9b980851607b9444d00
+SHA1: 1d7d02092fd1fbc6336686c8254b332651002e77
+Section: Networking
+Priority: optional
+Homepage: http://www.bitchx.com/
+Description: incredibly common IRC attack client
+Name: BitchX
+Tag: purpose::console, role::hacker
+
+Package: boost
+Version: 1.68.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 322872
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/boost_1.68.0-1_iphoneos-arm.deb
+Size: 9447002
+MD5sum: 7704b2a7fb9d3f3a541c0a7a3f0fc8dd
+SHA1: 6c006953ecd832fee3c6a2fbfb218173e2fc079e
+Section: Development
+Priority: optional
+Homepage: http://www.boost.org/
+Description: soon-to-be-standardized C++ class library
+Name: Boost
+Tag: purpose::library, role::developer
+
+Package: bootstrap-cmds
+Version: 60-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 592
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: cc
+Filename: https://apt.bingner.com/debs/1443.00/bootstrap-cmds_60-2_iphoneos-arm.deb
+Size: 71408
+MD5sum: d1fdd4762f959fa2ae0b260f2cb78843
+SHA1: 254048a0038e4747a66173c0901c0c3be20a1fe1
+Section: Development
+Priority: optional
+Description: Mach interface and stub generator
+Name: Bootstrap Commands
+Tag: purpose::console, role::developer
+
+Package: bzip2
+Version: 1.0.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 408
+Filename: https://apt.bingner.com/debs/1443.00/bzip2_1.0.6-1_iphoneos-arm.deb
+Size: 53070
+MD5sum: fb8ad9bad8b3bd8c1f3c1fad3cd50901
+SHA1: af8b99bde02484cc33b54770ba570dc03533d094
+Section: Archiving
+Priority: important
+Homepage: http://www.bzip.org/
+Description: compression that's slightly better than gzip
+Tag: purpose::console, role::hacker
+
+Package: ca-certificates
+Version: 0.0.1-1
+Architecture: all
+Maintainer: Sam Bingner
+Depends: firmware (>= 2.0)
+Conflicts: org.thebigboss.cacerts
+Replaces: org.thebigboss.cacerts
+Provides: org.thebigboss.cacerts
+Filename: https://apt.bingner.com/debs/1443.00/ca-certificates_0-1_all.deb
+Size: 134436
+MD5sum: 5d4744afecd3bd84d9921bfa8755f70e
+SHA1: 2887452fc6e3007ead9053e9afbcd5d6dc3ebf99
+Section: Utilities
+Priority: optional
+Multi-Arch: foreign
+Description: CA certs for curl, wget, git.
+Tag: purpose::console, role::hacker
+Name: CA Certs
+
+Package: ca-certificates
+Version: 0.0.2
+Architecture: all
+Maintainer: Sam Bingner
+Depends: firmware (>= 2.0)
+Conflicts: org.thebigboss.cacerts, openssl (<< 1.0.2r)
+Replaces: org.thebigboss.cacerts
+Provides: org.thebigboss.cacerts
+Filename: https://apt.bingner.com/debs/1443.00/ca-certificates_0.0.2_all.deb
+Size: 125710
+MD5sum: c9e280b321aba40459c988eac9625957
+SHA1: 878696ce1037a53c58d3d75dfcf39507a942f18c
+Section: Utilities
+Priority: optional
+Multi-Arch: foreign
+Description: CA certs for curl, wget, git.
+Tag: purpose::console, role::hacker
+Name: CA Certs
+
+Package: class-dump
+Version: 3.1.2-x-1.0.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 592
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/class-dump_3.1.2-x-1.0.1-1_iphoneos-arm.deb
+Size: 58574
+MD5sum: 72490473d9bc9af20b2ba75bca69adbc
+SHA1: 3531a6eadeaf4d78cda71baea0f4c9108e6948ba
+Section: Development
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://iphone.freecoder.org/classdump_en.html
+Description: reverse engineer Objective-C headers
+Depiction: http://cydia.saurik.com/info/class-dump/
+Name: Class Dump
+Tag: purpose::console, role::developer
+
+Package: cmake
+Version: 3.14.2-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 87488
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0, ncurses
+Filename: https://apt.bingner.com/debs/1443.00/cmake_3.14.2-1_iphoneos-arm.deb
+Size: 6353200
+MD5sum: 4d3db0f06f2d90cf79fbb3c9fca10ff9
+SHA1: 8b7f0e594118e267a4d586d77c8a72d840079610
+Section: Development
+Priority: optional
+Description: Cross-platfrom make
+Name: CMake
+Tag: purpose::console, role::developer
+
+Package: com.bingner.plutil
+Version: 0.0.4
+Architecture: iphoneos-arm
+Maintainer: Samuel Bingner
+Installed-Size: 256
+Depends: firmware (>=2.0)
+Conflicts: com.ericasadun.utilities
+Filename: https://apt.bingner.com/debs/1443.00/com.bingner.plutil_0.0.4_iphoneos-arm.deb
+Size: 47952
+MD5sum: 17a5d6802e0586ad1d458188b4c3b602
+SHA1: a21ef5ac3b9fa0bacf47c5b53b4f0429b989d068
+Section: System
+Multi-Arch: foreign
+Description: plutil as from erica sadun
+Tag: role::hacker
+Author: Samuel Bingner
+Name: plutil
+
+Package: com.bingner.plutil
+Version: 0.1.0
+Architecture: iphoneos-arm
+Maintainer: Samuel Bingner
+Installed-Size: 256
+Depends: firmware (>=2.0)
+Conflicts: com.ericasadun.utilities
+Filename: https://apt.bingner.com/debs/1443.00/com.bingner.plutil_0.1.0_iphoneos-arm.deb
+Size: 48220
+MD5sum: 1b53bd21bc041aa972e776c45c506afc
+SHA1: 554f77bfd67b35c5f60c0e8f8ff71758a50c36a1
+Section: System
+Multi-Arch: foreign
+Description: plutil as from erica sadun
+Tag: role::hacker
+Author: Samuel Bingner
+Name: plutil
+
+Package: com.bingner.snappy
+Version: 1.1-1
+Architecture: iphoneos-arm
+Maintainer: Samuel Bingner
+Installed-Size: 68
+Filename: https://apt.bingner.com/debs/1443.00/com.bingner.snappy_1.1-1_iphoneos-arm.deb
+Size: 4868
+MD5sum: ecc4981a7df7a7cf1a21a63ce67755c5
+SHA1: b662fde1e2fd0dde8f076450af24b09af7b44585
+Section: System
+Description: A Tool for APFS Snapshot Management
+Tag: role::hacker
+Author: Samuel Bingner
+Name: Snappy
+
+Package: com.bingner.snappy
+Version: 1.2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 268
+Depends: firmware (>= 10.3)
+Filename: https://apt.bingner.com/debs/1443.00/com.bingner.snappy_1.2_iphoneos-arm.deb
+Size: 10698
+MD5sum: 6b412783a9d98082235f3f4f5fa1b729
+SHA1: c1da33727b6708ce04fe0fd6148938b84be426ab
+Section: System
+Description: A Tool for APFS Snapshot Management
+Tag: role::hacker
+Author: Sam Bingner <snappy@bingner.com>
+Name: Snappy
+
+Package: com.bingner.spawn
+Version: 0.1-1
+Architecture: iphoneos-arm
+Maintainer: Samuel Bingner
+Installed-Size: 132
+Filename: debs/1443.00/com.bingner.spawn_0.1-1_iphoneos-arm.deb
+Size: 4978
+MD5sum: cea579f1f0096571a8d5d9d1fcfc4127
+SHA1: 70c552c067b21aa2ec3a03d7d8e9b4391bf96344
+Section: System
+Description: A tool to call jbd to platformize a binary while executing it
+Tag: role::hacker
+Author: Samuel Bingner
+Name: spawn
+
+Package: com.ex.substitute
+Version: 0.0.7-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 368
+Pre-Depends: coreutils-bin
+Depends: firmware (>= 8.0), cy+cpu.arm64, meridiansafemode, mobilesubstrate (=0.9.5101+dummy)
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject
+Provides: com.ex.libsubstitute, mobilesubstrate
+Filename: debs/1443.00/com.ex.substitute_0.0.7-1_iphoneos-arm.deb
+Size: 39600
+MD5sum: 2b85b70185680e309ac0962b45f4093d
+SHA1: 56e0f777f601fe899205a571905f7af0ef36cafe
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.0.8-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 328
+Pre-Depends: coreutils-bin
+Depends: firmware (>= 8.0), cy+cpu.arm64, meridiansafemode, mobilesubstrate (=0.9.5101+dummy)
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject
+Provides: com.ex.libsubstitute, mobilesubstrate
+Filename: debs/1443.00/com.ex.substitute_0.0.8-1_iphoneos-arm.deb
+Size: 28716
+MD5sum: f268da537c945b7c2ff04a395a114bc4
+SHA1: 30f1762948f4b8244da6175bf6dde4a1387f42c8
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.0.9-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 344
+Pre-Depends: coreutils-bin
+Depends: firmware (>= 8.0), cy+cpu.arm64, meridiansafemode, mobilesubstrate (=0.9.5101+dummy)
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject
+Provides: com.ex.libsubstitute, mobilesubstrate
+Filename: debs/1443.00/com.ex.substitute_0.0.9-1_iphoneos-arm.deb
+Size: 29094
+MD5sum: 95a7e183b68e7a1b5fcc12c1446febef
+SHA1: 945550a651f709005348b6cae7df25faa3b251b6
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.0.9-10
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 348
+Pre-Depends: coreutils-bin
+Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, mobilesubstrate (=0.9.5101+dummy), uikittools (>=1.1.13-4)
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject
+Provides: com.ex.libsubstitute, mobilesubstrate
+Filename: debs/1443.00/com.ex.substitute_0.0.9-10_iphoneos-arm.deb
+Size: 28314
+MD5sum: 6368c243ca4870dc05455600335ac544
+SHA1: 517b6ef5ce023b0ac40da3b516ca17cb48ec6e61
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.0.9-11
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 348
+Pre-Depends: coreutils-bin
+Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, mobilesubstrate (=0.9.5101+dummy), uikittools (>=1.1.13-4)
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject
+Provides: com.ex.libsubstitute, mobilesubstrate
+Filename: debs/1443.00/com.ex.substitute_0.0.9-11_iphoneos-arm.deb
+Size: 28324
+MD5sum: 3b3f46b017d221e06a32978d892f607a
+SHA1: 9bd2dbc944da03225333706f2f4f63bd37863563
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.0.9-12
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 348
+Pre-Depends: coreutils-bin
+Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, mobilesubstrate (=0.9.6301+dummy), uikittools (>=1.1.13-4)
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject
+Provides: com.ex.libsubstitute, mobilesubstrate
+Filename: debs/1443.00/com.ex.substitute_0.0.9-12_iphoneos-arm.deb
+Size: 28316
+MD5sum: 9eb24b62b19d730ae80083501c23b2d3
+SHA1: b4989fd329b37e57ee02a911811cbe467fd26357
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.0.9-14
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 344
+Pre-Depends: coreutils-bin, dpkg (>=1.17.11)
+Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, mobilesubstrate (=0.9.6301+dummy), uikittools (>=1.1.13-4)
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject
+Provides: com.ex.libsubstitute, mobilesubstrate
+Filename: debs/1443.00/com.ex.substitute_0.0.9-14_iphoneos-arm.deb
+Size: 28282
+MD5sum: a3700dc55b213249bdfce9fab93db3b3
+SHA1: 1db084261960b05d8428a2694068097a0aca2d46
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.0.9-3
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 348
+Pre-Depends: coreutils-bin
+Depends: firmware (>= 8.0), cy+cpu.arm64, meridiansafemode, mobilesubstrate (=0.9.5101+dummy)
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject
+Provides: com.ex.libsubstitute, mobilesubstrate
+Filename: debs/1443.00/com.ex.substitute_0.0.9-3_iphoneos-arm.deb
+Size: 30976
+MD5sum: 315c787a0df2e015f676d6116e600b07
+SHA1: b7b33175e0e70af872279ed30ed50dc35e6abc19
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.0.9-4
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 340
+Pre-Depends: coreutils-bin
+Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, mobilesubstrate (=0.9.5101+dummy), uikittools (>=1.1.13-4)
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject
+Provides: com.ex.libsubstitute, mobilesubstrate
+Filename: https://apt.bingner.com/debs/1443.00/com.ex.substitute_0.0.9-4_iphoneos-arm.deb
+Size: 30338
+MD5sum: bdd07858a71b3c9184ec2b556f9d5598
+SHA1: 7691d8ff881b5c61c29288b524f0f4b79fd77fe5
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.saurik.substrate.safemode
+Version: 0.9.6001+
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 96
+Depends: mobilesubstrate (>= 0.9.3367+38)
+Conflicts: safe-mode-fixer-ios7
+Replaces: safe-mode-fixer-ios7
+Filename: https://apt.bingner.com/debs/1443.00/com.saurik.substrate.safemode_0.9.6001+_iphoneos-arm.deb
+Size: 15842
+MD5sum: 42200cea4cff3836834ece42e427191c
+SHA1: c49a97c9b8cf046833572ca86614fd913bf770c9
+Section: Tweaks
+Priority: optional
+Description: safe mode safety extension (safe)
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/com.saurik.substrate.safemode/
+Name: Substrate Safe Mode
+
+Package: com.saurik.substrate.safemode
+Version: 0.9.6001.1
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 80
+Depends: mobilesubstrate (>= 0.9.3367+38)
+Conflicts: safe-mode-fixer-ios7
+Replaces: safe-mode-fixer-ios7
+Filename: https://apt.bingner.com/debs/1443.00/com.saurik.substrate.safemode_0.9.6001.1_iphoneos-arm.deb
+Size: 13762
+MD5sum: 2aa5a5e2e1dbfa36ae2b039c14fbb263
+SHA1: 4f0e9e9aafda6463153f2d32857a11a55a11e3db
+Section: Tweaks
+Priority: optional
+Description: safe mode safety extension (safe)
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/com.saurik.substrate.safemode/
+Name: Substrate Safe Mode
+
+Package: connect.c
+Version: 0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 192
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/connect.c_0-1_iphoneos-arm.deb
+Size: 18122
+MD5sum: ea93f94a2b8452e8636c8ff35da5cb8d
+SHA1: c7bdbc48f043db103bb478ebf2f20ba7bb8892ec
+Section: Networking
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.meadowy.org/~gotoh/projects/connect
+Description: very simple SOCKS and https proxy
+Tag: purpose::daemon, role::hacker
+
+Package: coreutils
+Version: 8.31-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 17592
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bash, coreutils-bin (>= 7.4-5), profile.d
+Replaces: netatalk (<= 2.0.3-6)
+Provides: md5sum, sha1sum
+Filename: https://apt.bingner.com/debs/1443.00/coreutils_8.31-1_iphoneos-arm.deb
+Size: 714854
+MD5sum: 0997053fd8ff60f0fd67e43d49bd7706
+SHA1: 569f47b27e54674873a606a7c85f9e5414a96457
+Section: Utilities
+Priority: standard
+Homepage: http://www.gnu.org/software/coreutils/
+Description: core set of Unix shell utilities from GNU
+Name: Core Utilities
+Tag: purpose::console, role::hacker
+
+Package: coreutils-bin
+Version: 8.31-1
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 7320
+Replaces: shell-cmds (<< 118-5), coreutils (<= 7.2-9)
+Provides: dirname, kill, mktemp, su
+Filename: https://apt.bingner.com/debs/1443.00/coreutils-bin_8.31-1_iphoneos-arm.deb
+Size: 679670
+MD5sum: d3597ea74d7a45a9383cf20b9ff30c3e
+SHA1: 7133ed7adeba9ad2ad099ee135fd517cb6c88e18
+Section: Utilities
+Priority: required
+Homepage: http://www.gnu.org/software/coreutils/
+Description: just the /bin folder from GNU coreutils
+Name: Core Utilities (/bin)
+Tag: purpose::console, role::hacker
+
+Package: cpanminus
+Version: 1.7044-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2136
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: perl
+Filename: debs/1443.00/cpanminus_1.7044-1_iphoneos-arm.deb
+Size: 209292
+MD5sum: 9133ef4315bbdca1fcdc0f9cd788b3c0
+SHA1: c01ad103419d8d41c83bdb531bb83b9499cd03b6
+Section: Scripting
+Priority: optional
+Description: script to get, unpack, build and install modules from CPAN
+Name: App::cpanminus
+Tag: purpose::console, role::developer, role::hacker
+
+Package: cpio
+Version: 2.12-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 392
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/cpio_2.12-1_iphoneos-arm.deb
+Size: 60744
+MD5sum: 4ea71778cfdeb1173376d7e6c7167611
+SHA1: 99ace811f521d6ab8cb813bad575d475d5e06cd3
+Section: Archiving
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/cpio/
+Description: predecessor to tar that is used by RPM
+Tag: purpose::console, role::hacker
+
+Package: csu
+Version: 232-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 56
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/csu_232-1_iphoneos-arm.deb
+Size: 2338
+MD5sum: 346cd93d34e69a67ead2bf49793c1b44
+SHA1: f292b767311d585bcfaa3f27f8347171ecbc3004
+Section: Development
+Priority: optional
+Multi-Arch: foreign
+Description: library loading and support stubs
+Name: Csu
+Tag: purpose::library, role::developer
+
+Package: curl
+Version: 7.65.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1896
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libnghttp2-14, libssh2, libssl1.0
+Filename: https://apt.bingner.com/debs/1443.00/curl_7.65.0-1_iphoneos-arm.deb
+Size: 322348
+MD5sum: 5b755c7b00631efaa87b157048f29b66
+SHA1: 1f3b280ea398194680c63fe884ef0c1774053d66
+Section: Networking
+Priority: standard
+Homepage: http://curl.haxx.se/
+Description: flexible multi-protocol file transfers
+Name: cURL
+Tag: purpose::console, role::hacker
+
+Package: cvs
+Version: 1.12.13+deb9u1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2080
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/cvs_1.12.13+deb9u1-1_iphoneos-arm.deb
+Size: 350814
+MD5sum: d368f2da6eb2c4c8d0d98143b9a56342
+SHA1: 2f17f56e19c4f76b8b7610bde85384266caf5069
+Section: Data_Storage
+Priority: optional
+Homepage: http://www.nongnu.org/cvs/
+Description: the original popular revision control
+Tag: purpose::console, role::hacker
+
+Package: cwidget
+Version: 0.5.17-1
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 2272
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libsigc++, ncurses
+Filename: debs/1443.00/cwidget_0.5.17-1_iphoneos-arm.deb
+Size: 232298
+MD5sum: d4d454cf681043ed7e0b993676886d96
+SHA1: 82aee09919d1c382aec107d8b256f1a45bea5fa5
+Section: Development
+Priority: optional
+Description: C++ library for ncurses (terminal) UIs
+Tag: purpose::library, role::developer
+
+Package: cydia
+Version: 1.1.32~b1
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 7496
+Pre-Depends: debianutils, dpkg (>= 1.14.25-8), xz, firmware (>=5.0)
+Depends: apt7-lib, apt7-key, cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.18), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.4)
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: debs/1443.00/cydia_1.1.32~b1_iphoneos-arm.deb
+Size: 1238128
+MD5sum: e671f18eff789af3653b72069210ef02
+SHA1: 2d2d171e293dae59a196f5320f844c29d0b3ed7a
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia
+Version: 1.1.32~b12
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 7592
+Pre-Depends: debianutils, dpkg (>= 1.14.25-8), firmware (>=5.0)
+Depends: apt7-lib | libapt, apt7-key | apt-key, cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.18), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), xz
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: debs/1443.00/cydia_1.1.32~b12_iphoneos-arm.deb
+Size: 1249474
+MD5sum: fbad1c954f546e72941e2fe6b24909d7
+SHA1: be90300e70ba6fde2b4ba8c39b5953aad108da0c
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia
+Version: 1.1.32~b14
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 7400
+Pre-Depends: debianutils, dpkg (>= 1.16.1), firmware (>=5.0)
+Depends: apt7-lib | libapt, apt7-key | apt-key, cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.18), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), xz
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: debs/1443.00/cydia_1.1.32~b14_iphoneos-arm.deb
+Size: 1259154
+MD5sum: c2ba0842b4dd7b54eacb0bc81e31f6c4
+SHA1: b0ae44f434ef3b4b95cd02c81f008a900e570f8d
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia
+Version: 1.1.32~b16
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 7480
+Pre-Depends: debianutils, dpkg (>= 1.16.1), firmware (>=5.0)
+Depends: apt7-lib | libapt, apt7-key | apt-key, cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.18), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), xz
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: debs/1443.00/cydia_1.1.32~b16_iphoneos-arm.deb
+Size: 1278820
+MD5sum: 154601716ec2e7e873a845d875c53afb
+SHA1: 84abc3011d856dc60d347071adadfd3143684247
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia
+Version: 1.1.32~b19
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 7712
+Pre-Depends: debianutils, dpkg (>= 1.16.1), firmware (>=5.0)
+Depends: cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.18), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.14), xz
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: https://apt.bingner.com/debs/1443.00/cydia_1.1.32~b19_iphoneos-arm.deb
+Size: 1301510
+MD5sum: fb1ade9f6227d3d2f7b4c2f3dc8f94de
+SHA1: ffeaf59538db7bce19dc076f7dc3937b21cf4738
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia
+Version: 1.1.32~b2
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 7504
+Pre-Depends: debianutils, dpkg (>= 1.14.25-8), xz, firmware (>=5.0)
+Depends: apt7-lib, apt7-key, cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.18), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.4)
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: debs/1443.00/cydia_1.1.32~b2_iphoneos-arm.deb
+Size: 1239116
+MD5sum: 8bfec3944737d471deee476ecaff045c
+SHA1: 34ba2f2fe7709f3a568ea2443b4e0e94caf27285
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia
+Version: 1.1.32~b3
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 7504
+Pre-Depends: debianutils, dpkg (>= 1.14.25-8), xz, firmware (>=5.0)
+Depends: apt7-lib, apt7-key, cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.18), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.4)
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: debs/1443.00/cydia_1.1.32~b3_iphoneos-arm.deb
+Size: 1239184
+MD5sum: 887a5f077fcda305ed8bed09862373a9
+SHA1: 50f1e526699326a5dc428f5b6f9e077a0e9223cb
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia
+Version: 1.1.32~b5
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 7504
+Pre-Depends: debianutils, dpkg (>= 1.14.25-8), xz, firmware (>=5.0)
+Depends: apt7-lib, apt7-key, cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.18), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.4)
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: debs/1443.00/cydia_1.1.32~b5_iphoneos-arm.deb
+Size: 1239540
+MD5sum: ee1356edb823588b26087c0ded41d5d6
+SHA1: 6f4c838669a49cfeb2d866a4adc408f552515c4d
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia
+Version: 1.1.32~b9
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 7504
+Pre-Depends: debianutils, dpkg (>= 1.14.25-8), xz, firmware (>=5.0)
+Depends: apt7-lib | libapt, apt7-key | apt-key, cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.18), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.4)
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: debs/1443.00/cydia_1.1.32~b9_iphoneos-arm.deb
+Size: 1239058
+MD5sum: af12583cbe4003fce39a09c25a0e9be9
+SHA1: 844783e2778b7ae3eacf752f860e96e93ecc57a5
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia-lproj
+Version: 1.1.32~b1
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 712
+Depends: cydia
+Conflicts: org.thebigboss.russiancydia
+Replaces: cydia, org.thebigboss.russiancydia
+Provides: org.thebigboss.russiancydia
+Filename: debs/1443.00/cydia-lproj_1.1.32~b1_iphoneos-arm.deb
+Size: 66782
+MD5sum: fa449ef13b409ace0ef8c670ad99acb0
+SHA1: 4cef1d2cf7608f3a55d7b17dd97da9c7f8f36176
+Section: Packaging
+Priority: required
+Description: languages and translations for Cydia
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia-lproj/
+Name: Cydia Translations
+
+Package: darwintools
+Version: 1-6
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 216
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/darwintools_1-6_iphoneos-arm.deb
+Size: 5258
+MD5sum: 5a50f861657688add8c6dd32878c21e5
+SHA1: 6ecdfbc16ced4d1f688497b4e72ed14f4af362b4
+Section: Administration
+Priority: required
+Description: startupfiletool, sw_vers
+Name: Darwin Tools
+Tag: purpose::console, role::hacker
+
+Package: debianutils
+Version: 4.8.6-1
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 120
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/debianutils_4.8.6-1_iphoneos-arm.deb
+Size: 6760
+MD5sum: cbd7883133c34cf3e82e971e63949b14
+SHA1: 1490bcc07189eecac255234859db261a261c0acd
+Section: Utilities
+Priority: required
+Description: pretty much just run-parts. yep? run-parts
+Name: Debian Utilities
+Tag: purpose::console, role::hacker
+
+Package: developer-cmds
+Version: 48-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 776
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/developer-cmds_48-1_iphoneos-arm.deb
+Size: 63334
+MD5sum: 8b72faafe969d9aeca698b58b40a9c43
+SHA1: 38d5fbd6c570a628231a71f9fa654a45dede7455
+Section: Development
+Priority: important
+Multi-Arch: foreign
+Description: ctags, error, hexdump, rpcgen, unifdef
+Tag: purpose::console, role::developer
+
+Package: dialog
+Version: 1.3-20190211-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 480
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: debs/1443.00/dialog_1.3-20190211-1_iphoneos-arm.deb
+Size: 88052
+MD5sum: 88c6895c0b5c151c259c8099f60d8e35
+SHA1: 8abb3282c3c5f1de8c9e75dcc5a4247890fe1db9
+Section: Utilities
+Priority: optional
+Homepage: https://invisible-island.net/dialog/
+Description: Display user-friendly message boxes from shell scripts
+Name: Dialog
+Tag: purpose::console, role::hacker
+
+Package: dict
+Version: 1.9.9-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1704
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/dict_1.9.9-1_iphoneos-arm.deb
+Size: 138498
+MD5sum: 86764f63ff047e4df874b4919bb25e13
+SHA1: 30e8402ba72bbe6583da654e003efb986be9d207
+Section: Networking
+Priority: optional
+Homepage: http://www.dict.org/
+Description: client for accessing online dictionaries
+Tag: purpose::console, role::hacker
+
+Package: diffutils
+Version: 3.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 960
+Filename: debs/1443.00/diffutils_3.6-1_iphoneos-arm.deb
+Size: 142850
+MD5sum: 1974a04ebad7875351469c28047f8330
+SHA1: 2e09ed91bc82a107382bfd8882eabaaf108a2933
+Section: Development
+Priority: important
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/diffutils/
+Description: compare two files for differences
+Name: Diff Utilities
+Tag: purpose::console, role::hacker
+
+Package: diskdev-cmds
+Version: 593.221.1-1
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1752
+Pre-Depends: https://apt.bingner.com/dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/diskdev-cmds_593.221.1-1_iphoneos-arm.deb
+Size: 57660
+MD5sum: f87e4ee8560542ae977b55074edc1637
+SHA1: 41391bff9923771a28465124504eeede90467ca2
+Section: System
+Priority: required
+Description: mount, quota, fsck, fstyp, fdisk, tunefs
+Tag: purpose::console, role::sysadmn
+
+Package: dmg2img
+Version: 0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 112
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/dmg2img_0-1_iphoneos-arm.deb
+Size: 5140
+MD5sum: 2e8fa6b27a731e23159f58829dfb6adf
+SHA1: 04b1df3e24f5000eb42ed06163161d27b919f529
+Section: Archiving
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://vu1tur.eu.org/tools/
+Description: converts compressed dmgs to HFS+
+Name: DMG2IMG
+Tag: purpose::console, role::hacker
+
+Package: dns2tcp
+Version: 0.5.2-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 376
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/dns2tcp_0.5.2-1_iphoneos-arm.deb
+Size: 32352
+MD5sum: 3464ddfaad070d838df5871e25bee168
+SHA1: 0fb24b379ddff00139d893ad5b17f5486b592d72
+Section: Networking
+Priority: standard
+Homepage: https://www.aldeid.com/wiki/Dns2tcp#Description
+Description: TCP over DNS (unconfigured, just software)
+Tag: purpose::console, role::hacker
+
+Package: dos2unix
+Version: 7.4.0-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 360
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/dos2unix_7.4.0-1_iphoneos-arm.deb
+Size: 19424
+MD5sum: 171cb7242264f9b76f748750f2674234
+SHA1: 688f4f8e34912139b8b662d4df350d9339239810
+Section: Utilities
+Priority: optional
+Homepage: https://waterlan.home.xs4all.nl/dos2unix.html
+Description: Convert text between DOS, UNIX, and Mac formats
+Name: Dos2unix
+Tag: purpose::console, role::hacker
+
+Package: dpkg
+Version: 1.19.7-1
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 4424
+Pre-Depends: tar (>= 1.23)
+Depends: bash, bzip2, coreutils-bin (>= 8.31), diffutils, file, findutils, gzip, ldid (>= 2:2.1.1), lzma, ncurses, tar, xz
+Filename: https://apt.bingner.com/debs/1443.00/dpkg_1.19.7-1_iphoneos-arm.deb
+Size: 525174
+MD5sum: 359fad4453893a7a34306634cc73e2c2
+SHA1: b16735f458c39b776671be264dd9aacbf5dfa672
+Section: Packaging
+Priority: required
+Homepage: http://wiki.debian.org/Teams/Dpkg
+Description: package maintainance tools from Debian
+Name: Debian Packager
+Tag: purpose::console, role::hacker
+
+Package: dpkg-perl
+Version: 1.19.7-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1976
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: dpkg, perl
+Filename: https://apt.bingner.com/debs/1443.00/dpkg-perl_1.19.7-1_iphoneos-arm.deb
+Size: 155664
+MD5sum: e3a8f65534ba3f6561c61e638f1c0fd5
+SHA1: 4ddef9d7d2757330739d8053d4db0829beb8cecb
+Section: Packaging
+Priority: optional
+Homepage: http://wiki.debian.org/Teams/Dpkg
+Description: perl-based package maintainance tools from Debian
+Name: Debian Packager (Perl)
+Tag: purpose::console, role::hacker
+
+Package: ed
+Version: 0.8-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 392
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/ed_0.8-1_iphoneos-arm.deb
+Size: 21720
+MD5sum: c58d7ef0350381065f64215583c2e92f
+SHA1: 81944e9dd99ac559aefe6d395b53c6485397964e
+Section: Text_Editors
+Priority: important
+Multi-Arch: foreign
+Description: the standard text editor, 'nuff said
+Tag: purpose::console, role::hacker
+
+Package: essential
+Version: 0-1
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 8
+Pre-Depends: bootstrap | dpkg (>= 1.13.25-5)
+Depends: cydia | com.ripdev.icy
+Filename: https://apt.bingner.com/debs/1443.00/essential_0-1_iphoneos-arm.deb
+Size: 680
+MD5sum: 1b994f0d4b3dd10eefe6681db1bfaee0
+SHA1: e8ed2d20e87f6debfebc9b2392695cef01642fb4
+Section: System
+Priority: required
+Multi-Arch: foreign
+Description: contains nothing, represents everything
+Depiction: http://cydia.saurik.com/info/essential/
+Name: Essential
+Tag: cydia::essential, role::goddess
+
+Package: expat
+Version: 2.2.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 624
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/expat_2.2.5-1_iphoneos-arm.deb
+Size: 66922
+MD5sum: 57c44104876d363c27177d3f38bd8ec3
+SHA1: 8a67a2edd50ecab78ff55cae3eff76ed49ee3e3f
+Section: Development
+Priority: standard
+Multi-Arch: foreign
+Description: stream-oriented XML parser written in C
+Name: XML Parser Toolkit
+Tag: purpose::library, role::developer
+
+Package: faac
+Version: 1.26-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1760
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/faac_1.26-1_iphoneos-arm.deb
+Size: 188774
+MD5sum: 23e3032197431a34c4803d67af96678a
+SHA1: 9d11a49da7cb2ed2f3945621fb9bfd976f20b349
+Section: Multimedia
+Priority: optional
+Multi-Arch: foreign
+Description: open source library for MPEG-4 AAC
+Name: FAAC
+Tag: purpose::library, role::developer
+
+Package: faad
+Version: 2.8.8-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1496
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/faad_2.8.8-1_iphoneos-arm.deb
+Size: 165782
+MD5sum: 7972ba3550802554dd8d9ccce551a8bc
+SHA1: b0dd3e4b4c341482607bc9fab06bdae4e7df33e4
+Section: Multimedia
+Priority: optional
+Multi-Arch: foreign
+Description: open source library for MPEG-4 AAC
+Name: FAAD
+Tag: purpose::library, role::developer
+
+Package: fakeroot
+Version: 1.20.2-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 336
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: shell-cmds (>= 118-8)
+Filename: https://apt.bingner.com/debs/1443.00/fakeroot_1.20.2-2_iphoneos-arm.deb
+Size: 22038
+MD5sum: 0cc7bcfb6e535a0c5c051dfa63e65cc3
+SHA1: a79423e6c9f638e3c1f7c1c557814feeb7403215
+Section: Development
+Priority: important
+Description: tool for simulating superuser privileges
+Tag: purpose::console, role::developer
+
+Package: fastjar
+Version: 0.94-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 256
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/fastjar_0.94-1_iphoneos-arm.deb
+Size: 15444
+MD5sum: 660d0f0bb4e1872200abe801f42a11e3
+SHA1: e15e08aeae8780a62dd09cd08ef0f854ee871c0f
+Section: Archiving
+Priority: optional
+Multi-Arch: foreign
+Description: faster native alternative to Java's jar
+Tag: purpose::console, role::hacker
+
+Package: ffmpeg
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 880
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavdevice58 (>= 4.1.3), libavfilter7 (>= 4.1.3), libavformat58 (>= 4.1.3), libavcodec58 (>= 4.1.3), libpostproc55 (>= 4.1.3), libswresample3 (>= 4.1.3), libswscale5 (>= 4.1.3), libavutil56 (>= 4.1.3), gnutls, libvpx6, xz, libmp3lame0, libopus0, libtheora0, libogg0, libvorbis0, libvorbisenc2, libx264-157, libx265-169, libxvidcore4
+Filename: debs/1443.00/ffmpeg_4.1.3-1_iphoneos-arm.deb
+Size: 111814
+MD5sum: 4b6d20870750c67e59614cba4001edde
+SHA1: 77ca335ac99b945fa3acab04e23caf4ec5e0ef51
+Section: Multimedia
+Priority: optional
+Description: Tools for transcoding, streaming and playing of multimedia files
+Tag: purpose::console, role::developer
+
+Package: file
+Version: 5.35-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 11384
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/file_5.35-2_iphoneos-arm.deb
+Size: 289140
+MD5sum: 0705cdf50b3a5579dff9fc5914d3cd91
+SHA1: 3c20d50837358126779741bf0356a4cfac24998d
+Section: Utilities
+Priority: important
+Description: guesses the type of a file from contents
+Tag: purpose::console, role::hacker
+
+Package: file-cmds
+Version: 220.7-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 792
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/file-cmds_220.7-1_iphoneos-arm.deb
+Size: 62900
+MD5sum: e3df02db2abd769e5c95cb43cf375724
+SHA1: 0ddad70d8fa11a5889f50c98800312282aa267bc
+Section: Utilities
+Priority: important
+Description: chflags, compress, ipcrm, ipcs, pax
+Tag: purpose::console, role::hacker
+
+Package: findutils
+Version: 4.6.0-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1592
+Depends: bash, sed
+Filename: debs/1443.00/findutils_4.6.0-2_iphoneos-arm.deb
+Size: 212748
+MD5sum: e1e14478157f53157d6a7aa11c3c3865
+SHA1: c3fab8068691b9b4fc9e8bc969dc313e281c1060
+Section: Utilities
+Priority: important
+Homepage: http://www.gnu.org/software/findutils/
+Description: indexes and searches filesystems
+Name: Find Utilities
+Tag: purpose::console, role::hacker
+
+Package: firmware-sbin
+Version: 0-1
+Architecture: all
+Essential: yes
+Maintainer: Sam Bingner
+Installed-Size: 36
+Pre-Depends: dpkg (>= 1.14.25-8), firmware (>= 11.0)
+Replaces: system-cmds (<= 433.4-11), diskdev-cmds (<= 421.7-3)
+Filename: https://apt.bingner.com/debs/1443.00/firmware-sbin_0-1_iphoneos-all.deb
+Size: 2050
+MD5sum: 1f36911678a627e642e990eea4fbd14c
+SHA1: 5efb02ab5e37c046f824c320cb9ef9d66f78c50a
+Section: System
+Priority: required
+Multi-Arch: foreign
+Description: represents Telesphoreo / iPhoneOS conflicts
+Name: iPhone Firmware (/sbin)
+
+Package: flac
+Version: 1.3.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2448
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ogg
+Filename: debs/1443.00/flac_1.3.2-1_iphoneos-arm.deb
+Size: 229140
+MD5sum: a0ec01c4bf0f8e9e7d07b7dd70cc85a6
+SHA1: fa234c1097ec8608c638991479617e78244548de
+Section: Multimedia
+Priority: optional
+Description: a non-proprietary alternative to MP3
+Name: FLAC
+Tag: purpose::library, role::developer
+
+Package: flex
+Version: 2.6.4-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 880
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: m4
+Filename: debs/1443.00/flex_2.6.4-1_iphoneos-arm.deb
+Size: 103176
+MD5sum: 0de09c0a7e3c08712bfe4ba86b57748b
+SHA1: 1ec181ede77e11eabd821b68dcbfe0378ae62fba
+Section: Development
+Priority: standard
+Multi-Arch: foreign
+Description: GNU lexer derived from Lex
+Name: Flex
+Tag: purpose::console, role::developer
+
+Package: gawk
+Version: 4.2.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2952
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/gawk_4.2.1-1_iphoneos-arm.deb
+Size: 255388
+MD5sum: 12759052538b65c2d84b035a605c4187
+SHA1: 8e98a73d5597134a07115f90181c668a15dad63b
+Section: Utilities
+Priority: important
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/gawk/
+Description: GNU's heavy-weight implementation of awk
+Name: Gawk
+Tag: purpose::console, role::hacker
+
+Package: gcrypt
+Version: 1.8.3-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2088
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libgpg-error
+Filename: https://apt.bingner.com/debs/1443.00/gcrypt_1.8.3-1_iphoneos-arm.deb
+Size: 330902
+MD5sum: e18561ece18cede7184871c7a5c2901e
+SHA1: b14396824c01a648fa9b543a44f683c1ae105143
+Section: Security
+Priority: optional
+Multi-Arch: foreign
+Description: LGPL cryptographic algorithm library
+Name: GNU Cryptography
+Tag: purpose::library, role::developer
+
+Package: gettext
+Version: 0.19.8-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 7592
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: https://apt.bingner.com/debs/1443.00/gettext_0.19.8-1_iphoneos-arm.deb
+Size: 745876
+MD5sum: a45d986bf334bef22918691b855a0993
+SHA1: 8ea7e5d8f875b49162e6cc668909f8f4e1db7e6d
+Section: System
+Priority: optional
+Homepage: http://www.gnu.org/software/gettext/
+Description: internationalization helper for strings
+Tag: purpose::library, role::developer
+
+Package: git
+Version: 2.20.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 55432
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: curl, expat, libssl1.0
+Filename: https://apt.bingner.com/debs/1443.00/git_2.20.0-1_iphoneos-arm.deb
+Size: 3040194
+MD5sum: 5b53985552b7446fdf539d7dc40d6898
+SHA1: 84c795182683305fda24f5ceabee19a8e0ef30fa
+Section: Data_Storage
+Priority: optional
+Description: fast content-addressable filesystem
+Name: Git
+Tag: purpose::console, role::hacker
+
+Package: glib
+Version: 2.20.4-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 17288
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: gettext, libffi, pcre
+Filename: https://apt.bingner.com/debs/1443.00/glib_2.20.4-2_iphoneos-arm.deb
+Size: 1441224
+MD5sum: 459383ce417453a2e27d7fdfb0d49fe2
+SHA1: 9ef0078e7f9664f060b4be0438b4124e68090e52
+Section: Development
+Priority: optional
+Description: basic object management used by Gnome
+Tag: purpose::library, role::developer
+
+Package: gnupg
+Version: 2.2.11-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 11408
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: gcrypt, gnutls, libassuan, libksba, npth
+Conflicts: gnupg2
+Replaces: gnupg2
+Provides: gnupg2
+Filename: https://apt.bingner.com/debs/1443.00/gnupg_2.2.11-2_iphoneos-arm.deb
+Size: 1179336
+MD5sum: cfb9ed217881a2f45d5c4ef7257934cb
+SHA1: d42ce287df3324eb1fbe61e974b560891b0c09f4
+Section: Security
+Priority: required
+Description: GNU privacy guard - a free PGP replacement
+Name: GnuPG
+Tag: purpose::console, role::hacker
+
+Package: gnupg2
+Version: 2.2.9-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 16
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: gnupg (>= 2.0)
+Filename: https://apt.bingner.com/debs/1443.00/gnupg2_2.2.9-1_iphoneos-arm.deb
+Size: 698
+MD5sum: 51cfd1604d17ae35ecd7cf2aeacd9b6f
+SHA1: 6f761041ef48c1e2c9a303257dc42fbf91a711a5
+Section: Security
+Priority: optional
+Description: GNU privacy guard - a free PGP replacement (dummy transitional package)
+Name: GnuPG 2
+Tag: purpose::console, role::hacker
+
+Package: gnutls
+Version: 3.5.19-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 7584
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: gcrypt, gettext, libgmp10, libidn2, libunistring, nettle, p11-kit, readline
+Filename: https://apt.bingner.com/debs/1443.00/gnutls_3.5.19-1_iphoneos-arm.deb
+Size: 757778
+MD5sum: e6bce98d97c68450b7755a53b8d67355
+SHA1: d34315f24245eae7b639eef76bcd36e66f61a964
+Section: Security
+Priority: optional
+Homepage: http://www.gnu.org/software/gnutls/
+Description: free sofware alternative to OpenSSL
+Name: GnuTLS
+Tag: purpose::library, role::developer
+
+Package: grep
+Version: 3.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 528
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/grep_3.1-1_iphoneos-arm.deb
+Size: 91310
+MD5sum: 40bcdfa749676e9acfdc6b72489c3cfc
+SHA1: 46fc28d61a992cff7bdbcb5fb3e630ada610f728
+Section: Utilities
+Priority: important
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/grep/
+Description: searches files for regular expressions
+Tag: purpose::console, role::hacker
+
+Package: gzip
+Version: 1.9-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 496
+Filename: https://apt.bingner.com/debs/1443.00/gzip_1.9-1_iphoneos-arm.deb
+Size: 70944
+MD5sum: e213e43744d8f8038ec905a5e00d55b5
+SHA1: dd3ab8e2989362c349ccf3bcab70311024216d02
+Section: Archiving
+Priority: required
+Multi-Arch: foreign
+Homepage: http://www.gzip.org/
+Description: the standard Unix compression algorithm
+Tag: purpose::console, role::hacker
+
+Package: htop
+Version: 2.2.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 328
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses (>= 6.0)
+Filename: debs/1443.00/htop_2.2.0-1_iphoneos-arm.deb
+Size: 47260
+MD5sum: 5b521e72b644176848ffe90c8117badd
+SHA1: fc8a4d4b231ad22ac7414be11adb2f0a7a1f7162
+Section: Administration
+Priority: important
+Description: An interactive process viewer for Unix systems.
+Tag: purpose::console, role::hacker
+
+Package: ice
+Version: 1.0.9-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 400
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: xproto, xtrans
+Filename: debs/1443.00/ice_1.0.9-1_iphoneos-arm.deb
+Size: 38206
+MD5sum: 19f2aaf4446d0d2aff43d63f716661c0
+SHA1: 219cdeaebaac8764a91c1c18d742c99f41611bac
+Section: X_Window
+Priority: optional
+Description: X's inter-client exchange library
+Name: Inter-Client Exchange
+Tag: purpose::library, role::developer
+
+Package: imagemagick
+Version: 7.0.8-11-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 13912
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libfftw3, libxml2, png, tiff, xz
+Filename: debs/1443.00/imagemagick_7.0.8-11-1_iphoneos-arm.deb
+Size: 1556190
+MD5sum: 68a395f486e6fd4cc9e8347909b34ab6
+SHA1: 3e883d0b370f6b053cd2a843c6621f01c8a4cff1
+Section: Multimedia
+Priority: optional
+Homepage: http://www.imagemagick.org/
+Description: image editing tool/library suite
+Name: ImageMagick
+Tag: purpose::console, purpose::library, role::hacker
+
+Package: indent
+Version: 2.2.10-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 264
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/indent_2.2.10-1_iphoneos-arm.deb
+Size: 41198
+MD5sum: d095406da5f33c3bf1820c81ef2929af
+SHA1: 0e673fca8d863f02f0457e836dd2209f8fbac6cd
+Section: Development
+Priority: standard
+Homepage: http://www.gnu.org/software/indent/
+Description: automatically prettifies a C program
+Tag: purpose::console, role::hacker
+
+Package: inetutils
+Version: 1.9.4-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 4064
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses, readline
+Replaces: coreutils (<< 7.2-6)
+Provides: hostname, ping, telnet
+Filename: debs/1443.00/inetutils_1.9.4-2_iphoneos-arm.deb
+Size: 268236
+MD5sum: 64ffe5ae3170a0564da132411fe7a3fa
+SHA1: bc2a4dc83442e3c8336b606ad235d7bb240fa2d5
+Section: Networking
+Priority: standard
+Homepage: http://www.gnu.org/software/inetutils/
+Description: ftp, inetd, ping, rlogin, telnet, tftp
+Tag: purpose::console, role::hacker
+
+Package: inputproto
+Version: 1.4.2.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 192
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/inputproto_1.4.2.1-1_iphoneos-arm.deb
+Size: 11604
+MD5sum: 75bc731798bf1a7d6142bca71c365262
+SHA1: d784b118c1d87ec7606d9f7475248be41177b7a5
+Section: X_Window
+Priority: optional
+Multi-Arch: foreign
+Description: prototypes for X's input layer
+Name: Input (Prototypes)
+Tag: purpose::library, role::developer
+
+Package: interceptty
+Version: 0.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 128
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/interceptty_0.6-1_iphoneos-arm.deb
+Size: 10222
+MD5sum: c1dd791d5bf11aa337f9060553e046fe
+SHA1: ac0c48a4953f874b51b83d50c701eabcb0888b2f
+Section: Terminal_Support
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.suspectclass.com/sgifford/interceptty/
+Description: virtual serial port for logging/emulation
+Author: "Scott W. Gifford" <sgifford@suspectclass.com>
+Tag: purpose::console, role::hacker
+
+Package: iokittools
+Version: 76-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 216
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: https://apt.bingner.com/debs/1443.00/iokittools_76-1_iphoneos-arm.deb
+Size: 4176
+MD5sum: 6737a11b3e8b04c6a75fc7b25e55a7b4
+SHA1: d2732e775f3b16ad851df44080bcc99562f763f6
+Section: Administration
+Priority: important
+Description: ioalloccount, ioclasscount, ioreg
+Name: IOKit Tools
+Tag: purpose::console, role::hacker
+
+Package: iphoneos-sys
+Version: 0-1
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 126072
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/iphoneos-sys_0-1_iphoneos-arm.deb
+Size: 6636598
+MD5sum: dbb321f941f023382ed793b431f0226d
+SHA1: faa74a34e103c17edadf5ab76a82b3cadd5c5ed9
+Section: Development
+Priority: optional
+Multi-Arch: foreign
+Description: header files for iPhone libraries
+ These header files are to be used with the iPhone GCC package. They are
+ based on the iphone-dev headers and do not contain any information from
+ Apple's iPhone SDK. As such, they are more of a temporary solution due
+ to some irritating inaccuracies. When Apple releases their SDK from
+ NDA, the instructions on saurik's website will be used to rebuild this
+ package correctly.
+Name: iPhone Headers
+Tag: purpose::library, role::developer
+
+Package: irssi
+Version: 1.1.1-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 4056
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: gettext, glib, libssl1.0, ncurses
+Filename: debs/1443.00/irssi_1.1.1-2_iphoneos-arm.deb
+Size: 367930
+MD5sum: f0235c8c91164faefde60adfec18cb15
+SHA1: 720d56dfbadaacf5d01fc629bdeb6aaf48c2334e
+Section: Networking
+Priority: optional
+Description: supposedly advanced console IRC client
+Tag: purpose::console, role::hacker
+
+Package: jailbreak-resources
+Version: 1.0~b21
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 740
+Pre-Depends: dpkg (>= 1.18.25-9)
+Depends: firmware (>= 11.0), firmware (<< 12.0) | signing-certificate, trustinjector, mobilesubstrate (>= 0.9.7020), firmware (<< 12.0) | mobilesubstrate (>= 0.9.7031), ldid (>= 2:2.1.1+elucubratus1)
+Conflicts: science.xnu.undecimus.resources
+Filename: debs/1443.00/jailbreak-resources_1.0~b21_iphoneos-arm.deb
+Size: 105026
+MD5sum: b979e194397cd1e93e6f86a7cc9c1710
+SHA1: e9dc0a414257ffcfa2b672ec1b113b0ef4075af7
+Section: System
+Description: Resources used by KPPLess Jailbreaks
+Author: Sam Bingner <maintainer@sbdhi.com>
+Name: Jailbreak Resources
+
+Package: jailbreak-resources
+Version: 1.0~b23
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 740
+Pre-Depends: dpkg (>= 1.18.25-9)
+Depends: firmware (>= 11.0), firmware (<< 12.0) | signing-certificate, trustinjector, mobilesubstrate (>= 0.9.7020), firmware (<< 12.0) | mobilesubstrate (>= 0.9.7031), ldid (>= 2:2.1.1+elucubratus1)
+Conflicts: science.xnu.undecimus.resources
+Filename: https://apt.bingner.com/debs/1443.00/jailbreak-resources_1.0~b23_iphoneos-arm.deb
+Size: 105074
+MD5sum: e49923f3ec678ad7f974573ee441cf43
+SHA1: 30328524b96aab1271e789709afc617b5fbc9285
+Section: System
+Description: Resources used by KPPLess Jailbreaks
+Author: Sam Bingner <maintainer@sbdhi.com>
+Name: Jailbreak Resources
+
+Package: jailbreak-resources
+Version: 1.0~b6
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 272
+Pre-Depends: dpkg (>= 1.18.25-9)
+Depends: firmware (>= 11.0), firmware (<< 12.0) | signing-certificate, trustinjector, mobilesubstrate (>= 0.9.7020), firmware (<< 12.0) | mobilesubstrate (>= 0.9.7031), ldid (>= 2:2.1.1+elucubratus1)
+Conflicts: science.xnu.undecimus.resources
+Filename: debs/1443.00/jailbreak-resources_1.0~b6_iphoneos-arm.deb
+Size: 41810
+MD5sum: 4012487594d7cacdffe97821030acad9
+SHA1: 89b1b6ccf34209c4b12640abb3f8327ac21a2bad
+Section: System
+Description: Resources used by KPPLess Jailbreaks
+Author: Sam Bingner <maintainer@sbdhi.com>
+Name: Unc0ver Jailbreak Resources
+
+Package: jailbreak-resources
+Version: 1.0~b7
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 272
+Pre-Depends: dpkg (>= 1.18.25-9)
+Depends: firmware (>= 11.0), firmware (<< 12.0) | signing-certificate, trustinjector, mobilesubstrate (>= 0.9.7020), firmware (<< 12.0) | mobilesubstrate (>= 0.9.7031), ldid (>= 2:2.1.1+elucubratus1)
+Conflicts: science.xnu.undecimus.resources
+Filename: debs/1443.00/jailbreak-resources_1.0~b7_iphoneos-arm.deb
+Size: 42000
+MD5sum: f398f2d90cc994109e3db9d686bcea92
+SHA1: 8a302848ba1d82ff83f9ccbd263e87d41938cdf3
+Section: System
+Description: Resources used by KPPLess Jailbreaks
+Author: Sam Bingner <maintainer@sbdhi.com>
+Name: Unc0ver Jailbreak Resources
+
+Package: kbproto
+Version: 1.0.3-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 264
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/kbproto_1.0.3-1_iphoneos-arm.deb
+Size: 22346
+MD5sum: 4688d69bb51dd2c17262c45dd60c0f76
+SHA1: 2f8688a25389c59e55fe6e0c6196cfb3b51e4308
+Section: X_Window
+Priority: optional
+Multi-Arch: foreign
+Description: prototypes for X's keyboard layer
+Tag: purpose::library, role::developer
+
+Package: lame
+Version: 3.100-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 272
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libmp3lame0 (>= 3.100), ncurses
+Filename: https://apt.bingner.com/debs/1443.00/lame_3.100-1_iphoneos-arm.deb
+Size: 33490
+MD5sum: 64eceed1a969858e043d8f944bf461d2
+SHA1: cba48f3a5e9f64afbe7ed8fdd8d940a0f1e22011
+Section: Multimedia
+Priority: optional
+Description: MP3 encoding library (frontend)
+Tag: purpose::library, role::developer
+
+Package: ld64
+Version: 274.2-3
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 15552
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ldid, libtapi, xar
+Conflicts: org.coolstar.ld64
+Replaces: org.coolstar.ld64
+Provides: org.coolstar.ld64
+Filename: https://apt.bingner.com/debs/1443.00/ld64_274.2-3_iphoneos-arm.deb
+Size: 1077084
+MD5sum: 0ee989de19e7d9df1d7483afbd8b8915
+SHA1: 07c0b77f0685200fd4d43325f7a98db5036e1f81
+Section: Development
+Priority: optional
+Description: 64bit iOS linker
+Tag: purpose::console, role::developer
+
+Package: ldid
+Version: 2:2.1.1+elucubratus2
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 928
+Depends: libplist (>= 2.0.0), libssl1.0, dpkg (>= 1.18.25-9)
+Filename: https://apt.bingner.com/debs/1443.00/ldid_2-2.1.1+elucubratus2_iphoneos-arm.deb
+Size: 51780
+MD5sum: f8722d8ff2593b5cfe7e973d54e29d58
+SHA1: 3e06294d466be5a1453dacc462f5bb45cfa57e4c
+Section: Development
+Priority: optional
+Description: pseudo-codesign Mach-O files
+Tag: purpose::console, role::developer
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/ldid/
+Name: Link Identity Editor
+Tag: purpose::console, role::developer
+
+Package: less
+Version: 530-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 640
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Replaces: system-cmds (<= 433.4-11)
+Provides: more
+Filename: debs/1443.00/less_530-2_iphoneos-arm.deb
+Size: 73896
+MD5sum: ee78e7c605041a436e5ffc6d7726520a
+SHA1: 6bceb7fb80e35cb95dfaea3f6efb81fe5e096fcb
+Section: Utilities
+Priority: important
+Description: provides less information than more does
+Tag: purpose::console, role::hacker
+
+Package: libapt
+Version: 1.8.2-1
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3544
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bzip2, dpkg (>= 1.14.25-9), gnupg, gzip, lz4, lzma, xz, libapt-pkg5.0 (>= 1.8.2), gnutls
+Conflicts: apt7-lib (<<1:0), apt7 (<<1:0), apt7-key (<<1:0), com.mc.xz
+Breaks: cydia (<< 1.1.10), aptitude (<< 0.4.11.11-6), apt7-lib (<< 1:0)
+Filename: https://apt.bingner.com/debs/1443.00/libapt_1.8.2-1_iphoneos-arm.deb
+Size: 292762
+MD5sum: 38b88b4f1cab561a9a7d29de26443dc2
+SHA1: 24ff922e09c4844bb8e60252948ddfabab797d27
+Section: Packaging
+Priority: required
+Description: the advanced packaging library from Debian
+Name: APT Strict (lib)
+Tag: purpose::library, role::developer
+
+Package: libapt-pkg-dev
+Version: 1.8.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1376
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libapt-pkg5.0
+Filename: https://apt.bingner.com/debs/1443.00/libapt-pkg-dev_1.8.2-1_iphoneos-arm.deb
+Size: 100696
+MD5sum: 7796a19e3fc9342d0351ff38a91b1481
+SHA1: a0d39e086e5a2a13a80e3b3c6cd04a5c7ad4960c
+Section: Packaging
+Priority: optional
+Description: development files for APT's libapt-pkg and libapt-inst
+Name: APT Development (libapt-pkg-dev)
+Tag: purpose::library, role::developer
+
+Package: libapt-pkg-perl
+Version: 0.1.34-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 696
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libapt-pkg5.0, perl
+Filename: https://apt.bingner.com/debs/1443.00/libapt-pkg-perl_0.1.34-1_iphoneos-arm.deb
+Size: 56270
+MD5sum: 60b26c1a4edff128be1b6d3f47f90840
+SHA1: 95dcdf716dc19d7067797600f48e1a7c7b34825d
+Section: Scripting
+Priority: optional
+Description: Perl interface to libapt-pkg
+Tag: purpose::console, role::hacker
+
+Package: libapt-pkg5.0
+Version: 1.8.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3416
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bzip2, lz4, lzma, xz
+Conflicts: apt7-lib (<<1:0), com.mc.xz (<<5.2.4-7)
+Provides: libapt-pkg (=1.8.2)
+Filename: https://apt.bingner.com/debs/1443.00/libapt-pkg5.0_1.8.2-1_iphoneos-arm.deb
+Size: 535296
+MD5sum: f3e55f8dd45353f4e24b7de8e9b1a29b
+SHA1: 1d3e0f6903ba9a437c1640929effde171ea22d12
+Section: Packaging
+Priority: required
+Description: the advanced packaging library from Debian
+Name: APT (libapt-pkg)
+Tag: purpose::library, role::developer
+
+Package: libarchive
+Version: 3.3.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2128
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: lz4, lzma
+Filename: https://apt.bingner.com/debs/1443.00/libarchive_3.3.2-1_iphoneos-arm.deb
+Size: 298700
+MD5sum: aae6842bb54fe9257c5240e0b3149d24
+SHA1: d35b96bf46743e29bfbd5900b50e3d45c6a1b9e0
+Section: Archiving
+Priority: optional
+Description: backend library for working with tar files
+Tag: purpose::library, role::developer
+
+Package: libarmfp
+Version: 0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 32
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/libarmfp_0-1_iphoneos-arm.deb
+Size: 1298
+MD5sum: 511bfdd1a14c6cb099e86f056c35504b
+SHA1: 3c23cb077fbf3234ab72796da2ca326a467fd28b
+Section: System
+Priority: optional
+Multi-Arch: foreign
+Description: library used by older iPhone software
+Name: ARM Floating Point
+Tag: purpose::library, role::developer
+
+Package: libassuan
+Version: 2.5.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 344
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libgpg-error, npth
+Filename: https://apt.bingner.com/debs/1443.00/libassuan_2.5.1-1_iphoneos-arm.deb
+Size: 35630
+MD5sum: fefba72d3dd3d03387a27b2c21d66e11
+SHA1: 4d4c4179b98a4b551965d1a6ee817e44b5ab8ddc
+Section: Development
+Priority: optional
+Multi-Arch: foreign
+Description: GnuPG's inter-process communication
+Name: Assuan
+Tag: purpose::library, role::developer
+
+Package: libavcodec-dev
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 600
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavcodec58
+Filename: https://apt.bingner.com/debs/1443.00/libavcodec-dev_4.1.3-1_iphoneos-arm.deb
+Size: 56664
+MD5sum: 6cc3f3d94b86298e7db0e598af5b47e3
+SHA1: 986ceb421cbcb734dd54f9db0468e4404124b16b
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library with de/encoders for audio/video codecs (development)
+Tag: purpose::console, role::developer
+
+Package: libavcodec58
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 25112
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavutil56, libmp3lame0, libogg0, libopus0, libswresample3, libtheora0, libvorbis0, libvorbisenc2, libvpx6, libx264-157, libx265-169, libxvidcore4, xz
+Filename: https://apt.bingner.com/debs/1443.00/libavcodec58_4.1.3-1_iphoneos-arm.deb
+Size: 4443078
+MD5sum: 0aad07866d9d5905e25483eb751ede78
+SHA1: 2c64feb952d0b75d53526bea2f98ecfabd2148ff
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library with de/encoders for audio/video codecs
+Tag: purpose::console, role::developer
+
+Package: libavdevice-dev
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 72
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavdevice58
+Filename: https://apt.bingner.com/debs/1443.00/libavdevice-dev_4.1.3-1_iphoneos-arm.deb
+Size: 6004
+MD5sum: 773ed02e21505ebdabd2c6c508a88c2d
+SHA1: 57fe68e6a46a4fabe2e68193b66f18fe62f62a17
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library for handling input and output devices (development)
+Tag: purpose::console, role::developer
+
+Package: libavdevice58
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 224
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavfilter7, libswscale5, libpostproc55, libavformat58, libavcodec58, libswresample3, libavutil56, gnutls, libvpx6, xz, libmp3lame0, libopus0, libtheora0, libogg0, libvorbis0, libvorbisenc2, libx264-157, libx265-169, libxvidcore4
+Filename: https://apt.bingner.com/debs/1443.00/libavdevice58_4.1.3-1_iphoneos-arm.deb
+Size: 19338
+MD5sum: 555a0b2bfaad70a61da2c4fec2789a6e
+SHA1: a064c8aef7f23d6fabdec3c4519e76c9478cb1f9
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library for handling input and output devices
+Tag: purpose::console, role::developer
+
+Package: libavfilter-dev
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 152
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavfilter7
+Filename: https://apt.bingner.com/debs/1443.00/libavfilter-dev_4.1.3-1_iphoneos-arm.deb
+Size: 14438
+MD5sum: 16cb76d86a0cac8cb034c87af02e3cfe
+SHA1: ea4409c10b0c953f0af27676f25b8b8ceb823180
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library for handling input and output devices (development)
+Tag: purpose::console, role::developer
+
+Package: libavfilter7
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 4888
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavfilter7, libswscale5, libpostproc55, libavformat58, libavcodec58, libswresample3, libavutil56, gnutls, libvpx6, xz, libmp3lame0, libopus0, libtheora0, libogg0, libvorbis0, libvorbisenc2, libx264-157, libx265-169, libxvidcore4
+Filename: debs/1443.00/libavfilter7_4.1.3-1_iphoneos-arm.deb
+Size: 789716
+MD5sum: 4ad33c400556f6981f6a3766201ac4e2
+SHA1: 1ccce18cd7cc13f619cc1586fed0025e640ce035
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library containing media filters
+Tag: purpose::console, role::developer
+
+Package: libavformat-dev
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 336
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavformat58
+Filename: debs/1443.00/libavformat-dev_4.1.3-1_iphoneos-arm.deb
+Size: 36462
+MD5sum: aadd44cf4919bd7af1b6c31bffe32b28
+SHA1: 75af3898c22ea0c639f5456cc8feb28d202f0042
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library with (de)muxers for multimedia containers (development)
+Tag: purpose::console, role::developer
+
+Package: libavformat58
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 4360
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavcodec58, libswresample3, libavutil56, gnutls, libvpx6, xz, libmp3lame0, libopus0, libtheora0, libogg0, libvorbis0, libvorbisenc2, libx264-157, libx265-169, libxvidcore4
+Filename: debs/1443.00/libavformat58_4.1.3-1_iphoneos-arm.deb
+Size: 802214
+MD5sum: 58f5545f78b80f5e3ec39336fd5515b7
+SHA1: 28eaeb21453faa2a86c6e9b0fab8e21f7e9a7470
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library with (de)muxers for multimedia containers
+Tag: purpose::console, role::developer
+
+Package: libavutil-dev
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 1312
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavutil56
+Filename: debs/1443.00/libavutil-dev_4.1.3-1_iphoneos-arm.deb
+Size: 93342
+MD5sum: 1ead9ac66e19f47028c9fc38220747bd
+SHA1: 337d180229adefea3cbc00e0caea1df53067c340
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library with functions for simplifying programming - runtime files (development)
+Tag: purpose::console, role::developer
+
+Package: libavutil56
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 808
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libavutil56_4.1.3-1_iphoneos-arm.deb
+Size: 142038
+MD5sum: f7875bebb3a6191dfa34c21596822d4e
+SHA1: 54e9ff4ad690cc53b8f32b8461c3423c236ff3dc
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library with functions for simplifying programming
+Tag: purpose::console, role::developer
+
+Package: libc-ares-dev
+Version: 1.15.0-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 112
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libc-ares-dev_1.15.0-1_iphoneos-arm.deb
+Size: 8990
+MD5sum: dde5f272293b1f3f1ecf7c183794a20a
+SHA1: a1743ff91a011f309219b636791ae1c41348f5d3
+Section: Development
+Priority: optional
+Homepage: https://c-ares.haxx.se/
+Description: Asynchronous DNS library (Development)
+Tag: purpose::library, role::developer
+
+Package: libc-ares2
+Version: 1.15.0-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 232
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libc-ares2_1.15.0-1_iphoneos-arm.deb
+Size: 26338
+MD5sum: 76c6f1ca5795410d761903d2d58007cc
+SHA1: d8169695761c36081b11c83c36a989c09e128cb2
+Section: Development
+Priority: optional
+Homepage: https://c-ares.haxx.se/
+Description: Asynchronous DNS library
+Tag: purpose::library, role::developer
+
+Package: libcompress-raw-lzma-perl
+Version: 2.082-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 336
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: perl, xz
+Filename: debs/1443.00/libcompress-raw-lzma-perl_2.082-1_iphoneos-arm.deb
+Size: 24298
+MD5sum: bf57abdf558d6cb441476f3dec78dcf1
+SHA1: 53f891a8b73d753fdaa7655948ecbd4d55c96a58
+Section: Scripting
+Priority: optional
+Description: Compress::Raw::Lzma provides a low-level Perl interface for reading and writing of lzma and xz files/buffers.
+Tag: purpose::console, role::hacker
+
+Package: libdict
+Version: 0.9-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 200
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libdict_0.9-1_iphoneos-arm.deb
+Size: 25340
+MD5sum: 17435d5b593aef1df100543d213befec
+SHA1: d715a408ef00cc06683d90f2a8a63528f60e6e28
+Section: Networking
+Priority: optional
+Multi-Arch: foreign
+Description: backend library for dictionary servers
+Tag: purpose::library, role::developer
+
+Package: libevent
+Version: 2.1.8-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2808
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0
+Filename: debs/1443.00/libevent_2.1.8-2_iphoneos-arm.deb
+Size: 222904
+MD5sum: f625e5fd7c58e50fb7b5cd33a53cf536
+SHA1: 6de41fdd8969f8b8a39d104b8aed667672b87a69
+Section: Development
+Priority: optional
+Homepage: http://libevent.org/
+Description: provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached
+Tag: purpose::library, role::developer
+
+Package: libfdk-aac
+Version: 0.1.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1968
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libfdk-aac_0.1.6-1_iphoneos-arm.deb
+Size: 355408
+MD5sum: 58f511fa55df7e18cc550acb28850bc7
+SHA1: 87b84d0f9b3079dd59844fd8fd99ebe736472144
+Section: Multimedia
+Priority: optional
+Multi-Arch: foreign
+Description: standalone library of the Fraunhofer FDK AAC code from Android
+Name: FDK-AAC
+Tag: purpose::library, role::developer
+
+Package: libffi
+Version: 3.2.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 248
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libffi_3.2.1-1_iphoneos-arm.deb
+Size: 17298
+MD5sum: ee955fe80f2b641e062029e127ec5a06
+SHA1: 80623e9dcc03675e222fab3e824e85059ee65782
+Section: Development
+Priority: optional
+Multi-Arch: foreign
+Description: dynamic generation of function calls
+Tag: purpose::library, role::developer
+
+Package: libfftw3
+Version: 3.3.8-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1960
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libfftw3_3.3.8-1_iphoneos-arm.deb
+Size: 318026
+MD5sum: f8877976ce6614ea19065d0ee093bc8f
+SHA1: 64af2b9ecc8c51c29c67ca000d3fccf7f7f591b6
+Section: Development
+Priority: optional
+Description: a C subroutine library for computing the discrete Fourier transform (DFT) in one or more dimensions,
+Tag: purpose::library, role::developer
+
+Package: libfragmentzip
+Version: 28-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 136
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: curl, libzip
+Filename: debs/1443.00/libfragmentzip_28-1_iphoneos-arm.deb
+Size: 5502
+MD5sum: 10146f8bdb62e45872dcc349cc84b80a
+SHA1: 5f5c415ea6d5b591c1f582895a41c6b8b95a2f93
+Section: Development
+Priority: optional
+Description: A library allowing to download single files from a remote zip archive
+Name: Fragment Zip Library
+Tag: purpose::console, role::developer
+
+Package: libgdbm
+Version: 1.18.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 728
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libgdbm_1.18.1-1_iphoneos-arm.deb
+Size: 63714
+MD5sum: 71a014deda96c308f83484fe3d05826a
+SHA1: cc05c3be299b12f5dd44e01d95113e737d9ed036
+Section: Development
+Priority: optional
+Homepage: http://savannah.nongnu.org/projects/libpipeline
+Description: GNU dbm (or GDBM, for short) is a library of database functions that use extensible hashing and work similar to the standard UNIX dbm. These routines are provided to a programmer needing to create and manipulate a hashed database.
+Tag: purpose::library, role::developer
+
+Package: libgmp10
+Version: 6.1.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1048
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libgmp10_6.1.2-1_iphoneos-arm.deb
+Size: 187128
+MD5sum: 5635985ebd4ed5fcd1258716a80ef0ae
+SHA1: f1ce5830d97c8d270f466c0544b064a5f32c0dbf
+Section: Security
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://gmplib.org/
+Description: GMP is a free library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating-point numbers. There is no practical limit to the precision except the ones implied by the available memory in the machine GMP runs on. GMP has a rich set of functions, and the functions have a regular interface.
+Name: GNU Multiple Precision Arithmetic Library
+Tag: purpose::library, role::developer
+
+Package: libgpg-error
+Version: 1.32-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1064
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: readline
+Filename: https://apt.bingner.com/debs/1443.00/libgpg-error_1.32-1_iphoneos-arm.deb
+Size: 87758
+MD5sum: ab32ed4c04003bc16be515a20b996914
+SHA1: 04b2e76aa152bcb30a556f452d11e8e4f36a58b3
+Section: Security
+Priority: optional
+Multi-Arch: foreign
+Description: GnuPG's error management library
+Name: GnuPG Errors
+Tag: purpose::library, role::developer
+
+Package: libid3tag
+Version: 0.15.1b-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 288
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libid3tag_0.15.1b-1_iphoneos-arm.deb
+Size: 29282
+MD5sum: afb88107bf48a0fdfb06c3313504c145
+SHA1: afd1540c162dcfe47eeb4a350e7398067a9d54c6
+Section: Multimedia
+Priority: optional
+Description: ID3 tag manipulation library
+Tag: purpose::library, role::developer
+
+Package: libidn2
+Version: 6.1.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 984
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libidn2_6.1.2-1_iphoneos-arm.deb
+Size: 107208
+MD5sum: 72a2116b4724fef660c3504a8a0820b2
+SHA1: 622daab9bc5983673ae8c2ef234ad6b5e2285892
+Section: Security
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/libidn/#libidn2
+Description: Libidn2 is an implementation of the IDNA2008 + TR46 specifications
+Tag: purpose::library, role::developer
+
+Package: libio-compress-lzma-perl
+Version: 2.081-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 240
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libcompress-raw-lzma-perl, perl
+Filename: debs/1443.00/libio-compress-lzma-perl_2.081-1_iphoneos-arm.deb
+Size: 12392
+MD5sum: 3cf6369e7b53ab07e756523c1d3c2e8e
+SHA1: 40a2e1826ad602435f359f8572290c7475dd5ce6
+Section: Scripting
+Priority: optional
+Description: modules for reading and writing lzma/xz files/buffers
+Tag: purpose::console, role::hacker
+
+Package: libirecovery
+Version: 0.1.1+210-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 336
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: readline
+Filename: debs/1443.00/libirecovery_0.1.1+210-1_iphoneos-arm.deb
+Size: 20218
+MD5sum: f25cf751be6c1f69e01b3177454e0dac
+SHA1: 22b302d34f24d6ec2c42834ce32182ae97caad11
+Section: Development
+Priority: optional
+Description: libirecovery is a cross-platform library which implements communication to iBoot/iBSS found on Apple's iOS devices via USB. A command-line utility is also provided.
+Tag: purpose::console, role::developer
+
+Package: libjpeg-turbo
+Version: 2.0.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 4064
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libjpeg-turbo_2.0.0-1_iphoneos-arm.deb
+Size: 222348
+MD5sum: ff2673b3eed34a61ca7b7d9334e5897d
+SHA1: 5db3410653801a3ed8fe0a52175c10e9ff46e5d9
+Section: Multimedia
+Priority: optional
+Homepage: https://sourceforge.net/projects/libjpeg-turbo/
+Description: JPEG image codec
+Tag: purpose::library, role::developer
+
+Package: libksba
+Version: 1.3.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 600
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libgpg-error
+Filename: debs/1443.00/libksba_1.3.5-1_iphoneos-arm.deb
+Size: 82232
+MD5sum: 03ed5af986fe1ada10868120e3f41fdc
+SHA1: 96e30fc13b6239049c0aa5c345ad330c58f70d80
+Section: Security
+Priority: optional
+Multi-Arch: foreign
+Description: GnuPG's certification management library
+Name: KSBA
+Tag: purpose::library, role::developer
+
+Package: liblua5.3
+Version: 5.3.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 512
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: readline
+Filename: debs/1443.00/liblua5.3_5.3.5-1_iphoneos-arm.deb
+Size: 81370
+MD5sum: de828ae4fed4f3f8edcb2a95ae04c2b9
+SHA1: 52677425ba76cb154b96a72c0df8d749e3218b71
+Section: Scripting
+Priority: optional
+Description: Shared library for the Lua interpreter version 5.3
+Tag: purpose::console, role::hacker
+
+Package: liblua5.3-dev
+Version: 5.3.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 128
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: liblua5.3
+Filename: debs/1443.00/liblua5.3-dev_5.3.5-1_iphoneos-arm.deb
+Size: 12574
+MD5sum: 4a342496e413d6fa2dfbb07335b2329d
+SHA1: 2685ffa1506143a55c0e0a3e450377a4e6529a42
+Section: Scripting
+Priority: optional
+Description: Development files for the Lua language version 5.3
+Tag: purpose::console, role::hacker
+
+Package: libmad
+Version: 0.15.1b+deb9u1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 416
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libmad_0.15.1b+deb9u1-1_iphoneos-arm.deb
+Size: 59602
+MD5sum: 86680600269afae5b615a95c9eabbf25
+SHA1: 19192460ec6171111cce287edadd1f9e9d4c6097
+Section: Multimedia
+Priority: optional
+Homepage: http://www.underbit.com/products/mad/
+Description: (supposedly) a high-quality MPEG audio decorder
+Name: MAD
+Tag: purpose::library, role::developer
+
+Package: libmp3lame-dev
+Version: 3.100-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 120
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libmp3lame0 (>= 3.100)
+Filename: debs/1443.00/libmp3lame-dev_3.100-1_iphoneos-arm.deb
+Size: 11290
+MD5sum: e07dcd9ac9fec98e6885c3a8c2ab0f12
+SHA1: 7c17de3eb73ac9ce5c096b598ac362721e759fc5
+Section: Multimedia
+Priority: optional
+Description: MP3 encoding library (development)
+Tag: purpose::library, role::developer
+
+Package: libmp3lame0
+Version: 3.100-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 712
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libmp3lame0_3.100-1_iphoneos-arm.deb
+Size: 122778
+MD5sum: 158f0f3ebc2029ee46e5d3c7c55d1684
+SHA1: f4eead49b2079e24a8384bb5a89d64fc83ec3df4
+Section: Multimedia
+Priority: optional
+Description: MP3 encoding library
+Tag: purpose::library, role::developer
+
+Package: libnghttp2-14
+Version: 1.38.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 400
+Pre-Depends: dpkg (>= 1.14.25-8)
+Conflicts: nghttp2, libnghttp2
+Replaces: nghttp2, libnghttp2
+Provides: nghttp2, libnghttp2
+Filename: debs/1443.00/libnghttp2-14_1.38.0-1_iphoneos-arm.deb
+Size: 53574
+MD5sum: 5cc7cbfd6402934f61454fa47f7f1fe9
+SHA1: 4dc4afabbf7823b38ca34c6ecc782ea165bd046c
+Section: Development
+Priority: standard
+Homepage: https://nghttp2.org/
+Description: library implementing HTTP/2 protocol (shared library)
+Tag: purpose::library, role::developer
+
+Package: libnghttp2-dev
+Version: 1.38.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 400
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libnghttp2-14
+Filename: debs/1443.00/libnghttp2-dev_1.38.0-1_iphoneos-arm.deb
+Size: 31654
+MD5sum: cf9d9cb4c52e5205bb9bf805bfa4ee9a
+SHA1: ad1239f42289fea3d22108d8dc17f34aba454a38
+Section: Development
+Priority: standard
+Homepage: https://nghttp2.org/
+Description: library implementing HTTP/2 protocol (development files)
+Tag: purpose::library, role::developer
+
+Package: libogg-dev
+Version: 1.3.3-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 80
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libogg0 (>= 1.3.3)
+Conflicts: ogg
+Filename: debs/1443.00/libogg-dev_1.3.3-1_iphoneos-arm.deb
+Size: 4900
+MD5sum: 75918807c4ff5d9b8644e5c65d1d7581
+SHA1: fa8eeebf8b4afbe665733ac7876a301d221f74c2
+Section: Multimedia
+Priority: optional
+Description: Ogg bitstream library (development)
+Tag: purpose::library, role::developer
+
+Package: libogg0
+Version: 1.3.3-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 120
+Pre-Depends: dpkg (>= 1.14.25-8)
+Conflicts: ogg
+Replaces: ogg
+Provides: ogg
+Filename: debs/1443.00/libogg0_1.3.3-1_iphoneos-arm.deb
+Size: 8886
+MD5sum: d8c0e6f1407b0960f1ea93c0bb258e51
+SHA1: 30d81d2f156ed04c70b0c0c6d1ddb76a71617b81
+Section: Multimedia
+Priority: optional
+Description: Ogg bitstream library
+Tag: purpose::library, role::developer
+
+Package: libopus-dev
+Version: 1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 344
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libopus0
+Filename: debs/1443.00/libopus-dev_1.3-1_iphoneos-arm.deb
+Size: 22930
+MD5sum: c67aebac83cf8d384bba1fab2ee5cac5
+SHA1: 53c1728292d9e2a36a970674b1375ab970022ccc
+Section: Multimedia
+Priority: optional
+Description: Opus codec runtime library (development)
+Tag: purpose::library, role::developer
+
+Package: libopus0
+Version: 1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 792
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libopus0_1.3-1_iphoneos-arm.deb
+Size: 178660
+MD5sum: 8e3861779d9af017e0258f937a5731d4
+SHA1: 16c179e58f815d071d600e5302186b03298ffb84
+Section: Multimedia
+Priority: optional
+Description: Opus codec runtime library
+Tag: purpose::library, role::developer
+
+Package: libpar2
+Version: 0.2-1
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 1432
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libsigc++
+Filename: debs/1443.00/libpar2_0.2-1_iphoneos-arm.deb
+Size: 94910
+MD5sum: 6a07e728afd7631d93b1179f70952ff6
+SHA1: 53e29ce415c6ea25a2a13ccaa329e5b47223c3ea
+Section: Archiving
+Priority: optional
+Multi-Arch: foreign
+Description: reed-solomon error correcting file format
+Author: Francois Lesueur <flesueur@users.sourceforge.net>
+Tag: purpose::library, role::developer
+
+Package: libpcap-dev
+Version: 1.9.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 376
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libpcap-dev_1.9.0-1_iphoneos-arm.deb
+Size: 34686
+MD5sum: c30684e156db5deb756da31b81005e29
+SHA1: d72600c6a90675286d5910acd6aaedf4164c0cfb
+Section: Networking
+Priority: standard
+Description: low-level network capture library (development)
+Tag: purpose::library, role::developer
+
+Package: libpcap1
+Version: 1.9.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 688
+Pre-Depends: dpkg (>= 1.14.25-8)
+Conflicts: libpcap
+Replaces: libpcap
+Provides: libpcap
+Filename: debs/1443.00/libpcap1_1.9.0-1_iphoneos-arm.deb
+Size: 83130
+MD5sum: 3fdd990579a0d5229151f1c182f3bca8
+SHA1: 4823348ff3b4675b3ab7f4440444a08d254cb071
+Section: Networking
+Priority: standard
+Description: low-level network capture library
+Tag: purpose::library, role::developer
+
+Package: libpipeline
+Version: 1.5.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 288
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libpipeline_1.5.0-1_iphoneos-arm.deb
+Size: 27674
+MD5sum: a03d543f82400d649c4364b528625a3d
+SHA1: 0486de05f1d9241ce63697e4e4ac07eb2d77d1f7
+Section: Development
+Priority: optional
+Homepage: http://savannah.nongnu.org/projects/libpipeline
+Description: Library for manipulating pipelines of subprocesses
+Tag: purpose::library, role::developer
+
+Package: libplist
+Version: 2.0.0-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 744
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libplist_2.0.0-2_iphoneos-arm.deb
+Size: 44398
+MD5sum: a6a9fde36d1b96b5c87c97d1c7ac4666
+SHA1: 81104dd05d0cc2c3c3261fc74d1b5e32022cb1b4
+Section: Networking
+Priority: standard
+Description: plist library
+Tag: purpose::library, role::developer
+
+Package: libpostproc-dev
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 40
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libpostproc55
+Filename: debs/1443.00/libpostproc-dev_4.1.3-1_iphoneos-arm.deb
+Size: 2396
+MD5sum: d3703494ac6394a76a312f24ae146b7f
+SHA1: 9075c4881aaf8cd6f0e4f86de49401b912d83b2c
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library for post processing (development)
+Tag: purpose::console, role::developer
+
+Package: libpostproc55
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 152
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavutil56
+Filename: debs/1443.00/libpostproc55_4.1.3-1_iphoneos-arm.deb
+Size: 14948
+MD5sum: c58e25ba8d955214c5b9f1fcc8fe6b0a
+SHA1: 07667965d6b08fb587fd02744cbe3219819a02e0
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library for post processing
+Tag: purpose::console, role::developer
+
+Package: libpython3.7
+Version: 3.7.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 108136
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses, readline, expat, xz, libssl1.0, libffi
+Filename: debs/1443.00/libpython3.7_3.7.3-1_iphoneos-arm.deb
+Size: 10173370
+MD5sum: 1211e52a47c1580a93d3565452c02dd7
+SHA1: 1f7a7af79149fe5f8ea89792a0eb41586aa101d8
+Section: Scripting
+Priority: optional
+Description: Shared Python runtime libraries (version 3.7)
+Tag: purpose::console, role::hacker
+
+Package: libpython3.7-dev
+Version: 3.7.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 10024
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libpython3.7
+Filename: debs/1443.00/libpython3.7-dev_3.7.3-1_iphoneos-arm.deb
+Size: 1086908
+MD5sum: fdda3d1a0e0f6b8f4bfe87e975e856b4
+SHA1: e56fe59aaea4fda13e58f5b37d3daa46c77df2c9
+Section: Scripting
+Priority: optional
+Description: Development files for python version 3.7.3
+Tag: purpose::console, role::hacker
+
+Package: libresolv
+Version: 25-3
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 16
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libresolv_25-3_iphoneos-arm.deb
+Size: 674
+MD5sum: 321b2f0e1b800cf8fa3222c2e03c2b09
+SHA1: 56666b9dc3f4636de441680cbb454da4f742035c
+Section: Networking
+Priority: optional
+Description: Darwin's copy of Bind's resolution engine
+Tag: purpose::library, role::developer
+
+Package: librpmatch
+Version: 1.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 168
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/librpmatch_1.0-1_iphoneos-arm.deb
+Size: 2704
+MD5sum: 46634ea21c142fa710fffdf30bc3bf0e
+SHA1: a82eb1138b94e5593ec21c45b8d3f04be04b30e6
+Section: Development
+Priority: optional
+Description: Xapian is an Open Source Search Engine Library
+Tag: purpose::library, role::developer
+
+Package: libsamplerate
+Version: 0.1.4-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3120
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libfftw3
+Filename: debs/1443.00/libsamplerate_0.1.4-1_iphoneos-arm.deb
+Size: 935964
+MD5sum: 6cff4dca2e305882f17436102157609d
+SHA1: ca009936b1cc794233403288fb4a44f5870cd065
+Section: Multimedia
+Priority: optional
+Homepage: http://www.mega-nerd.com/SRC/
+Description: a sample rate converter for audio
+Author: Erik de Castro Lopo <erikd@mega-nerd.com>
+Name: Secret Rabbit Code
+Tag: purpose::library, role::developer
+
+Package: libserf
+Version: 1.3.9-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 424
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: apr-lib, apr-util, expat, libssl1.0
+Filename: debs/1443.00/libserf_1.3.9-2_iphoneos-arm.deb
+Size: 47520
+MD5sum: a25b2c079dab3b9d7879068dd3b89812
+SHA1: 614ee150356499c7b550c52dd686a1d26bd063d4
+Section: Development
+Priority: standard
+Homepage: https://serf.apache.org/
+Description: a high performance C-based HTTP client library built upon the Apache Portable Runtime (APR) library.
+Tag: purpose::library, role::developer
+
+Package: libsigc++
+Version: 2.10.0-1
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 3216
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libsigc++_2.10.0-1_iphoneos-arm.deb
+Size: 95452
+MD5sum: fae528890f2842cca0e62f4152952117
+SHA1: 04423a2a153242e9c0ae6a35f339a8ad7e89c277
+Section: Development
+Priority: optional
+Description: callback framework for C++
+Tag: purpose::library, role::developer
+
+Package: libssh2
+Version: 1.8.0-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 608
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0
+Filename: https://apt.bingner.com/debs/1443.00/libssh2_1.8.0-2_iphoneos-arm.deb
+Size: 77038
+MD5sum: 71bff4c1e2d48e991ffbc0d3845e8ff0
+SHA1: ee49bd64503c2fde7e8a88a8b7090fb24a563f07
+Section: Development
+Priority: optional
+Homepage: https://www.libssh2.org/
+Description: a client-side C library implementing the SSH2 protocol
+Tag: purpose::library, role::developer
+
+Package: libssl-dev
+Version: 1.0.2s-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3744
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0 (>= 1.0.2s)
+Filename: debs/1443.00/libssl-dev_1.0.2s-1_iphoneos-arm.deb
+Size: 220436
+MD5sum: 4ff798e9c0aa13653f62ad626e9769d7
+SHA1: 79d6358fbf7ccb48eee097b2853598e80221b4c9
+Section: Security
+Priority: standard
+Description: OpenSSL Libraries for version 1.0 (development)
+Name: OpenSSL 1.0 Libraries
+Tag: purpose::library, role::developer
+
+Package: libssl0.9.8
+Version: 0.9.8zh-1
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 9624
+Pre-Depends: dpkg (>= 1.14.25-8)
+Conflicts: openssl (<<1.0)
+Filename: https://apt.bingner.com/debs/1443.00/libssl0.9.8_0.9.8zh-1_iphoneos-arm.deb
+Size: 718064
+MD5sum: 5dab8b6631f3ab54b32692e2fed198ce
+SHA1: 18a19c2a4c6e1a383f67c820e24041b2a7383949
+Section: Security
+Priority: standard
+Description: OpenSSL Libraries for version 1.0
+Name: OpenSSL 0.9.8 Libraries
+Tag: purpose::library, role::developer
+
+Package: libssl1.0
+Version: 1.0.2s-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 6440
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ca-certificates
+Conflicts: openssl (<<1.0.2q)
+Filename: https://apt.bingner.com/debs/1443.00/libssl1.0_1.0.2s-1_iphoneos-arm.deb
+Size: 815306
+MD5sum: 77db2446c032e43eee9924a6bbcb39ae
+SHA1: 6b5afd03d23983153e9b4d875e0b047006cbaba2
+Section: Security
+Priority: standard
+Description: OpenSSL Libraries for version 1.0
+Name: OpenSSL 1.0 Libraries
+Tag: purpose::library, role::developer
+
+Package: libssl1.1.1
+Version: 1.1.1c-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 6600
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ca-certificates
+Filename: https://apt.bingner.com/debs/1443.00/libssl1.1.1_1.1.1c-1_iphoneos-arm.deb
+Size: 1176232
+MD5sum: d197f45cc07fa9b1ca44e2f0d480634f
+SHA1: 934cda457c55006be2b162fc09b5a42749684d11
+Section: Security
+Priority: standard
+Description: OpenSSL Libraries for version 1.1.1
+Name: OpenSSL 1.1.1 Libraries
+Tag: purpose::library, role::developer
+
+Package: libstdc++
+Version: 0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 16
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libstdc++_0-1_iphoneos-arm.deb
+Size: 698
+MD5sum: 60048c28ebfb7f25436e143035ff85b9
+SHA1: 31e8ea20e8f013a3335ec4233ea277514552ccc8
+Section: Development
+Priority: optional
+Multi-Arch: foreign
+Description: just a single, tiny, crucial symlink
+Name: C++ Standard Library
+Tag: purpose::console, role::developer
+
+Package: libswresample-dev
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 80
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libswresample3
+Filename: debs/1443.00/libswresample-dev_4.1.3-1_iphoneos-arm.deb
+Size: 7340
+MD5sum: 41137bf064951f34a0c73f92f6cb2662
+SHA1: df46d3fdbdf8e65b5a65f4eb01d3e2291f7b0782
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library for audio resampling, rematrixing etc. (development)
+Tag: purpose::console, role::developer
+
+Package: libswresample3
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 240
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavutil56
+Filename: debs/1443.00/libswresample3_4.1.3-1_iphoneos-arm.deb
+Size: 31702
+MD5sum: 718506b33679f191c101b28b7717a172
+SHA1: cc39306087316a7e21176b2ed846039bc5aca4ce
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library for audio resampling, rematrixing etc.
+Tag: purpose::console, role::developer
+
+Package: libswscale-dev
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 56
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libswscale5
+Filename: debs/1443.00/libswscale-dev_4.1.3-1_iphoneos-arm.deb
+Size: 4902
+MD5sum: a72b8d7bed8adc49d8749454677b2555
+SHA1: baf9f4041f67739b92256f3912b9bdad4f7154a0
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library for image scaling and various conversions (development)
+Tag: purpose::console, role::developer
+
+Package: libswscale5
+Version: 4.1.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 1096
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libavutil56
+Filename: debs/1443.00/libswscale5_4.1.3-1_iphoneos-arm.deb
+Size: 130364
+MD5sum: 17e96102b7cc628728d475ec3c3caf8b
+SHA1: 8f56e7e4dfdcc63d894bcb4299f28d6a7c91ac24
+Section: Multimedia
+Priority: optional
+Description: FFmpeg library for image scaling and various conversions
+Tag: purpose::console, role::developer
+
+Package: libtapi
+Version: 2.0.0-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1544
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libtapi_2.0.0-2_iphoneos-arm.deb
+Size: 156414
+MD5sum: 53d741a95f632b0e40da644b640b9f37
+SHA1: b6158247a339e5966c0ce8d8728e334b5bfa2874
+Section: Development
+Priority: optional
+Description: a text file format for describing the contents of a shared library file on Apple's MacOS computer operating system
+Tag: purpose::console
+
+Package: libtasn1
+Version: 4.13-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 632
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libtasn1_4.13-1_iphoneos-arm.deb
+Size: 45598
+MD5sum: 0e30020454b283efcde67311d4d3d022
+SHA1: 9ed030e98c5c152175dcecc65f55235b2f1938eb
+Section: Security
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/libtasn1
+Description: Libtasn1 is the ASN.1 library used by GnuTLS, p11-kit and some other packages
+Tag: purpose::library, role::developer
+
+Package: libterm-readline-perl-perl
+Version: 1.0303-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 296
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: perl, xz
+Filename: debs/1443.00/libterm-readline-perl-perl_1.0303-1_iphoneos-arm.deb
+Size: 38158
+MD5sum: a70ab317452e04cce2a5ec4325a898b7
+SHA1: b147eeb0f4c35d206ea6b9b31b2563a8518a52bb
+Section: Scripting
+Priority: optional
+Description: Perl implementation of Readline libraries
+Tag: purpose::console, role::hacker
+
+Package: libtheora-dev
+Version: 1.1.1-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 272
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libtheora0
+Filename: debs/1443.00/libtheora-dev_1.1.1-1_iphoneos-arm.deb
+Size: 23086
+MD5sum: 1d0fd16262f4408266d849339c63a762
+SHA1: 261e5fe839e8b49256a49683a8dd2f48b2dea35d
+Section: Multimedia
+Priority: optional
+Description: Theora Video Compression Codec (development)
+Tag: purpose::library, role::developer
+
+Package: libtheora0
+Version: 1.1.1-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 1064
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libogg0, libvorbis0
+Filename: debs/1443.00/libtheora0_1.1.1-1_iphoneos-arm.deb
+Size: 100546
+MD5sum: ab7733698a2f2e575b07170c37124116
+SHA1: 33e7dfe5c3a8f7faff86a981cf0f55e539b98a15
+Section: Multimedia
+Priority: optional
+Description: Theora Video Compression Codec
+Tag: purpose::library, role::developer
+
+Package: libunistring
+Version: 0.9.10-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3696
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libunistring_0.9.10-1_iphoneos-arm.deb
+Size: 402216
+MD5sum: 4805003e184d26fcc985b651894aa864
+SHA1: 91a8a487d5a5cee2f35df1e479fe19116c7b1505
+Section: Security
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/libunistring/
+Description: Unicode string library for C
+Tag: purpose::library, role::developer
+
+Package: libutf8proc
+Version: 2.2.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 664
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libutf8proc_2.2.0-1_iphoneos-arm.deb
+Size: 50568
+MD5sum: 2668372aaf06b7f7194697bd31d91819
+SHA1: 076bcaf9a740b079b8ae26c092713f27d38b0d62
+Section: Development
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://juliastrings.github.io/utf8proc/
+Description: a small, clean C library that provides Unicode normalization, case-folding, and other operations for data in the UTF-8 encoding
+Tag: purpose::library, role::developer
+
+Package: libvncserver
+Version: 0.9.11-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1488
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: gcrypt, gnutls, libjpeg-turbo, p11-kit, png
+Filename: debs/1443.00/libvncserver_0.9.11-1_iphoneos-arm.deb
+Size: 178242
+MD5sum: 7cd74073d15acf6fab48136d11dd92e3
+SHA1: d5a083a322bb573071c0641f68bd606dd5afd155
+Section: Development
+Priority: optional
+Homepage: http://libvncserver.sourceforge.net/
+Description: backend library for VNC servers
+Author: Johannes Schindelin <Johannes.Schindelin@RuBBISHgmx.de>
+Name: LibVNCServer
+Tag: purpose::library, role::developer
+
+Package: libvorbis-dev
+Version: 1.3.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 152
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libogg0, libvorbis0 (>= 1.3.6), libvorbisenc2 (>= 1.3.6), libvorbisfile3 (>= 1.3.6)
+Conflicts: vorbis
+Replaces: vorbis
+Provides: vorbis
+Filename: debs/1443.00/libvorbis-dev_1.3.6-1_iphoneos-arm.deb
+Size: 10072
+MD5sum: 165546945337465f73dbbee5517e2634
+SHA1: 561a479c0cedbc57689f3223265c5f50c0a2e9d6
+Section: Multimedia
+Priority: optional
+Description: decoder library for Vorbis General Audio Compression Codec
+Tag: purpose::library, role::developer
+
+Package: libvorbis0
+Version: 1.3.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 464
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libogg0
+Conflicts: vorbis
+Filename: debs/1443.00/libvorbis0_1.3.6-1_iphoneos-arm.deb
+Size: 80850
+MD5sum: a4a5f5d7dec4bf4ee4ed5a07f5c208b7
+SHA1: a351eb3329fa5bd0427c36ae2149f715c2296ee9
+Section: Multimedia
+Priority: optional
+Description: decoder library for Vorbis General Audio Compression Codec
+Tag: purpose::library, role::developer
+
+Package: libvorbisenc2
+Version: 1.3.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1664
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libvorbis0, libogg0
+Conflicts: vorbis
+Filename: debs/1443.00/libvorbisenc2_1.3.6-1_iphoneos-arm.deb
+Size: 82466
+MD5sum: 3d46eb08a71c1f40715c13750d4a67f3
+SHA1: 94811d1889aa68bb1c2e44df9bf01bd1a02d5ca2
+Section: Multimedia
+Priority: optional
+Description: decoder library for Vorbis General Audio Compression Codec
+Tag: purpose::library, role::developer
+
+Package: libvorbisfile3
+Version: 1.3.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 160
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libvorbis0, libogg0
+Conflicts: vorbis
+Filename: debs/1443.00/libvorbisfile3_1.3.6-1_iphoneos-arm.deb
+Size: 13124
+MD5sum: 6e54925faf5f6e47be7c6aea71adb722
+SHA1: 1631dbb219d8d0665fefdb1fa0ba0f58896d16db
+Section: Multimedia
+Priority: optional
+Description: decoder library for Vorbis General Audio Compression Codec
+Tag: purpose::library, role::developer
+
+Package: libvpx-dev
+Version: 1.8.0-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 304
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libvpx-dev_1.8.0-1_iphoneos-arm.deb
+Size: 26508
+MD5sum: 8f64fc63393a251433061269490ebee7
+SHA1: 9fcad0db89ff221b280bd379122e42d1d1ebd21a
+Section: Multimedia
+Priority: optional
+Description: VP8/VP9 video codec (Development)
+Tag: purpose::library, role::developer
+
+Package: libvpx6
+Version: 1.8.0-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 2592
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libvpx6_1.8.0-1_iphoneos-arm.deb
+Size: 478316
+MD5sum: b689982c03dbd19440cd9088c79bf7d5
+SHA1: e4bb49fb8b3c32257088f93cfe07ea1c3e33ab62
+Section: Multimedia
+Priority: optional
+Description: VP8/VP9 video codec
+Tag: purpose::library, role::developer
+
+Package: libx264-157
+Version: 0.157.2945-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 2984
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libx264-157_0.157.2945-1_iphoneos-arm.deb
+Size: 388136
+MD5sum: 09a888d7d03429d2c75c75b598b6856f
+SHA1: 24599510b5b427706a49219b4244ab2a98648ce7
+Section: Multimedia
+Priority: optional
+Description: x264/AVC video coding library
+Tag: purpose::library, role::developer
+
+Package: libx264-dev
+Version: 0.157.2945-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 128
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libx264-157 (>= 0.157.2945)
+Filename: debs/1443.00/libx264-dev_0.157.2945-1_iphoneos-arm.deb
+Size: 14724
+MD5sum: acf4d2bfc0d5d0925d9bb79c2cdb1120
+SHA1: 5dc69f2012ad6c4d6e50a103b69ee41d771836dc
+Section: Multimedia
+Priority: optional
+Description: x264/AVC video coding library (development)
+Tag: purpose::library, role::developer
+
+Package: libx265-169
+Version: 3.0-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 7408
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libx265-169_3.0-1_iphoneos-arm.deb
+Size: 541714
+MD5sum: dc14ffc1c8e7a7d1a313b663ab3c9eb6
+SHA1: 38856a45b181f4a0e66c68b8b62192f2267cd9c2
+Section: Multimedia
+Priority: optional
+Description: x265 video coding library
+Tag: purpose::library, role::developer
+
+Package: libx265-dev
+Version: 3.0-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 224
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libx265-169
+Filename: debs/1443.00/libx265-dev_3.0-1_iphoneos-arm.deb
+Size: 26986
+MD5sum: c9981cb8acadecbe18f1daa223f85396
+SHA1: 8449d86cbb4f8817c341e889093ce1c2e1b381f6
+Section: Multimedia
+Priority: optional
+Description: x265 video coding library (development)
+Tag: purpose::library, role::developer
+
+Package: libxapian
+Version: 1.4.7-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 7504
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libxapian_1.4.7-1_iphoneos-arm.deb
+Size: 701960
+MD5sum: d966f45702bdd0a82c3c6d45998ea614
+SHA1: 488c33177aa47920f0dd6e247b81e1eb9ac2789b
+Section: Development
+Priority: optional
+Description: Xapian is an Open Source Search Engine Library
+Tag: purpose::library, role::developer
+
+Package: libxml2
+Version: 2.6.32-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1336
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/libxml2_2.6.32-1_iphoneos-arm.deb
+Size: 88540
+MD5sum: 896a73bec45f384c0cdc85b1d8feb914
+SHA1: c9e05903183f25f60930e08eaeaa656a223f86a3
+Section: Development
+Priority: standard
+Homepage: http://xmlsoft.org/
+Description: very popular XML parser from Gnome
+Depiction: http://cydia.saurik.com/info/libxml2/
+Name: libxml2
+Tag: purpose::library, role::developer
+
+Package: libxml2-dylib
+Version: 2.6.32-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2792
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: firmware (<< 3.0)
+Replaces: libxml2 (<= 2.6.32-5)
+Filename: debs/1443.00/libxml2-dylib_2.6.32-1_iphoneos-arm.deb
+Size: 436804
+MD5sum: fb043954b18aca9351009a4ffd3c7b0f
+SHA1: 3c6f194942a5c68012d6e4c01da854fa46a07bbf
+Section: Development
+Priority: required
+Description: upgraded libxml2 library for iPhoneOS 2.x
+Name: libxml2 Upgrade
+Tag: purpose::library, role::developer
+
+Package: libxslt1-dev
+Version: 1.1.28-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 384
+Pre-Depends: dpkg (>= 1.14.25-8)
+Provides: libxslt-dev
+Filename: debs/1443.00/libxslt1-dev_1.1.28-1_iphoneos-arm.deb
+Size: 26062
+MD5sum: 76c1720e4fb70e43587cb898f8302c12
+SHA1: 219abf9943b17b0912e170c2e19e755b07920feb
+Section: Development
+Priority: optional
+Homepage: http://xmlsoft.org/XSLT/
+Description: GNOME's C XSL/T library over libxml2 (development)
+Tag: purpose::library, role::developer
+
+Package: libxvidcore-dev
+Version: 1.3.5-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 88
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libxvidcore-dev_1.3.5-1_iphoneos-arm.deb
+Size: 9594
+MD5sum: 9d5c9dfd2103cf730a7fbd8bf89db392
+SHA1: 159a94b209f8149e235b8516cfa34a7bdc549122
+Section: Multimedia
+Priority: optional
+Description: Open source MPEG-4 video codec (development)
+Tag: purpose::library, role::developer
+
+Package: libxvidcore4
+Version: 1.3.5-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 1056
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/libxvidcore4_1.3.5-1_iphoneos-arm.deb
+Size: 147964
+MD5sum: fc5aed458d31f4ac468c110fee1f3ddb
+SHA1: 765965a0680c905cf13d64b9d078267a7a03fa23
+Section: Multimedia
+Priority: optional
+Description: High-performance, high-quality MPEG-4 video library
+Tag: purpose::library, role::developer
+
+Package: libzip
+Version: 1.5.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 784
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/libzip_1.5.1-1_iphoneos-arm.deb
+Size: 62196
+MD5sum: d8630ace1951351d3b2cfca171217f7c
+SHA1: 0e73bb8071659bec93fe412b42e16c46fe254615
+Section: Development
+Priority: optional
+Description: a C library for reading, creating, and modifying zip archives.
+Tag: purpose::console, role::developer
+
+Package: links
+Version: 1.03-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2112
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0
+Filename: https://apt.bingner.com/debs/1443.00/links_1.03-2_iphoneos-arm.deb
+Size: 302446
+MD5sum: d6e8d2b905c9db778a50b58197227cd7
+SHA1: ab01ca0b59ba36a57a449c6e67221e0ed4401540
+Section: Networking
+Priority: standard
+Description: console web browser with mouse support
+Tag: purpose::console, role::hacker
+
+Package: llvm-clang
+Version: 5.0.2-3
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 402928
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: dpkg (>= 1.18.25-9)
+Conflicts: org.coolstar.llvm-clang64, org.coolstar.llvm-clang
+Replaces: org.coolstar.llvm-clang64, org.coolstar.llvm-clang
+Provides: org.coolstar.llvm-clang64, org.coolstar.llvm-clang, cc, gcc
+Filename: https://apt.bingner.com/debs/1443.00/llvm-clang_5.0.2-3_iphoneos-arm.deb
+Size: 40489786
+MD5sum: 7a6e94711add527b69879b508478d748
+SHA1: 7d582d1982606e50d4393fa1072f550706af629d
+Section: Development
+Priority: optional
+Description: A toolkit for the construction of highly optimized compilers, optimizers, and runtime environments and a compiler front-end for the C family of languages (C, C++, Objective-C, and Objective-C++) which is built as part of the LLVM compiler infrastructure project.
+Name: LLVM Clang
+Tag: purpose::console, role::developer
+
+Package: lsof
+Version: 33-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 304
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: debs/1443.00/lsof_33-1_iphoneos-arm.deb
+Size: 42480
+MD5sum: a8c741bc977101f5f43d847d1f6ae193
+SHA1: 5a736bb0403eaaa6c949d239e5ccf55b1c400360
+Section: Administration
+Priority: standard
+Multi-Arch: foreign
+Description: shows what files programs have open
+Tag: purpose::console, role::developer
+
+Package: lua5.3
+Version: 5.3.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 216
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: liblua5.3, readline
+Provides: lua
+Filename: debs/1443.00/lua5.3_5.3.5-1_iphoneos-arm.deb
+Size: 9174
+MD5sum: 8ba93f4587a2d2d256e452a1b37a79a2
+SHA1: 12b6c220864690330e8b1e0a21fd924a7a63a32e
+Section: Scripting
+Priority: optional
+Description: Simple, extensible, embeddable programming language
+Tag: purpose::console, role::hacker
+
+Package: lz4
+Version: 1.7.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1032
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/lz4_1.7.5-1_iphoneos-arm.deb
+Size: 81542
+MD5sum: d759359750ad4261f2497a41c89c181c
+SHA1: 6b3d4e2608c70d95aecc4aa3d8cfc4ffd5574628
+Section: Archiving
+Priority: important
+Multi-Arch: foreign
+Homepage: http://tukaani.org/lzma/
+Description: Extremely Fast Compression algorithm
+Name: LZ4
+Tag: purpose::console, role::hacker
+
+Package: lzip
+Version: 1.20-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 272
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/lzip_1.20-1_iphoneos-arm.deb
+Size: 37300
+MD5sum: 86ea442a830e193de22f911918afce5d
+SHA1: c476dec13c0dbc0e2a8d7e679c455ded035431b1
+Section: Archiving
+Priority: optional
+Homepage: http://savannah.nongnu.org/projects/lzip/
+Description: Lzip is a lossless data compressor with a user interface similar to the one of gzip or bzip2.
+Tag: purpose::console, role::hacker
+
+Package: lzma
+Version: 2:4.32.7-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 736
+Conflicts: com.mc.xz
+Filename: https://apt.bingner.com/debs/1443.00/lzma_2:4.32.7-2_iphoneos-arm.deb
+Size: 69930
+MD5sum: 31d304172b109340f5cc60f9bb5b1a6a
+SHA1: b286111eabd262032f24549d36516cd8534d0899
+Section: Archiving
+Priority: important
+Homepage: http://tukaani.org/lzma/
+Description: slower, but better, compression algorithm
+Name: LZMA Utils
+Tag: purpose::console, role::hacker
+
+Package: m4
+Version: 1.4.18-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 560
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/m4_1.4.18-2_iphoneos-arm.deb
+Size: 101852
+MD5sum: a2dc847cf3d770e9373a71f7c79a6a55
+SHA1: ddae7028ed58f4dd91698faaf0867e2ed0e52e3a
+Section: Scripting
+Priority: important
+Description: arcane macro processing engine
+Name: m4 Processor
+Tag: purpose::console, role::hacker
+
+Package: make
+Version: 4.2.1-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 464
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/make_4.2.1-2_iphoneos-arm.deb
+Size: 82476
+MD5sum: 1bc5dcad64d11b1b3d9d2794231cfa52
+SHA1: 5c84bc746c5a4cd3a44211e6172739cac6376102
+Section: Development
+Priority: important
+Description: dependency-based build environments
+Name: Make
+Tag: purpose::console, role::hacker
+
+Package: masscan
+Version: 1.0.5-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 680
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/masscan_1.0.5-1_iphoneos-arm.deb
+Size: 135650
+MD5sum: 131954a0d9555ef01ac32629092b5ddf
+SHA1: 552665c581362bb5d32c896184ab922c4a319b3b
+Section: Networking
+Priority: optional
+Homepage: https://github.com/robertdavidgraham/masscan/
+Description: TCP port scanner, scans entire Internet in under 5 minutes
+Name: Masscan
+Tag: purpose::console, role::hacker
+
+Package: mc
+Version: 4.8.21-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 5104
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: glib, ncurses
+Filename: debs/1443.00/mc_4.8.21-1_iphoneos-arm.deb
+Size: 477454
+MD5sum: 777beee00d9de7ca3b714f97b5f8be2b
+SHA1: 5caf46f0525bcd3f938bcf4464ac084956c51cc0
+Section: Terminal_Support
+Priority: optional
+Homepage: http://midnight-commander.org/
+Description: portable console file manager
+Name: Midnight Commander
+Tag: purpose::console, role::hacker
+
+Package: mdnsresponder
+Version: 171.4-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 152
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/mdnsresponder_171.4-1_iphoneos-arm.deb
+Size: 12592
+MD5sum: 58dfedc8d4b8810ba9bdd636726b4ffb
+SHA1: b11eedbac49025ffd0b5b610b9828a7921eecebd
+Section: Networking
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://developer.apple.com/darwin/projects/bonjour/
+Description: the normally bundled client programs
+Name: mDNSResponder
+Tag: purpose::console, purpose::daemon, role::hacker
+
+Package: meridiansafemode
+Version: 1.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 72
+Depends: firmware (>= 8.0), cy+cpu.arm64
+Conflicts: com.saurik.substrate.safemode
+Replaces: com.saurik.substrate.safemode
+Provides: com.saurik.substrate.safemode
+Filename: debs/1443.00/meridiansafemode_1.0-1_iphoneos-arm.deb
+Size: 4136
+MD5sum: 327db250e480ccd09d3563e661fe99e2
+SHA1: 5d25f3145370cd167f9130d51357b8921cbe2ece
+Section: System
+Priority: optional
+Description: Safemode for TweakLoader
+Author: Midnight Team <midnight@furcode.com>
+Name: Meridian SafeMode
+
+Package: meridiansafemode
+Version: 1.0-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 72
+Depends: firmware (>= 8.0), cy+cpu.arm64
+Conflicts: com.saurik.substrate.safemode
+Filename: debs/1443.00/meridiansafemode_1.0-2_iphoneos-arm.deb
+Size: 4134
+MD5sum: 8b50c92f6c4d680f867e5b42510a5f8a
+SHA1: dd88829ddc0361941b33c895c10a951490999419
+Section: System
+Priority: optional
+Description: Safemode for TweakLoader
+Author: Midnight Team <midnight@furcode.com>
+Name: Meridian SafeMode
+
+Package: minicom
+Version: 2.7.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 672
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: debs/1443.00/minicom_2.7.1-1_iphoneos-arm.deb
+Size: 77632
+MD5sum: e7ae7c3ef03e0b1f14f79499ccb74ed4
+SHA1: 8aebe43e95d694653a2401fa13b2d8449e2c6cd2
+Section: Networking
+Priority: optional
+Multi-Arch: foreign
+Description: serial communication software
+Tag: purpose::console, role::hacker
+
+Package: mobilesubstrate
+Version: 0.9.6301+dummy
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: com.ex.substitute
+Conflicts: me.devbug.msreloadfix, com.r3pwn.startsubstrate, com.ragemasta.bootstrap
+Breaks: uikittools (<< 1.1.1), com.mywi4 (<= 5.03.2), com.phoenix.pandoracontrols (<= 1.1.0-1), com.intelliborn.intelliscreenx (<= 1.0.110), com.evad3rs.evasi0n7 (<< 0.2)
+Filename: https://apt.bingner.com/debs/1443.00/mobilesubstrate_0.9.6301+dummy_iphoneos-arm.deb
+Size: 740
+MD5sum: e338a94a9da28589752d9b55c372988d
+SHA1: a9beaf827da059fc45d96073ebb1496340488bcb
+Section: System
+Priority: optional
+Description: MobileSubstrate Dummy Package
+Name: MobileSubstrate Dummy Package
+
+Package: mterminal
+Version: 1.4-6
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 776
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bash, coreutils, ncurses, system-cmds
+Filename: https://apt.bingner.com/debs/1443.00/mterminal_1.4-6_iphoneos-arm.deb
+Size: 108042
+MD5sum: dedfc589450b43d268bfc369d5b2f4c8
+SHA1: c7ede4ad96c384ca5c682c6528e51c60695c5240
+Section: Utilities
+Priority: standard
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=mterminalDp
+Description: A MobileTerminal fork
+Author: lordscotland <admin@officialscheduler.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=mterminalDp
+Name: MTerminal
+Tag: purpose::uikit, role::enduser
+
+Package: nail
+Version: 12.4-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1032
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl0.9.8
+Filename: debs/1443.00/nail_12.4-2_iphoneos-arm.deb
+Size: 158480
+MD5sum: d923924a83fe03e089c7574deafc30ea
+SHA1: 029fbcadf01b2d5535754b3258b3c5362e8ef04e
+Section: Networking
+Priority: important
+Description: modern implementation of traditional mail
+Name: Heirloom mailx (nail)
+Tag: purpose::cosole, role::hacker
+
+Package: nano
+Version: 3.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1232
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: debs/1443.00/nano_3.2-1_iphoneos-arm.deb
+Size: 168842
+MD5sum: 274f1efdb68d9bdb474e5eb9267218e8
+SHA1: d14e34c12cae3c54ef4c15100f02880fb864dc0c
+Section: Text_Editors
+Priority: standard
+Description: completely free, modern clone of Pico
+Tag: purpose::console, role::hacker
+
+Package: ncftp
+Version: 3.2.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2912
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: less
+Filename: debs/1443.00/ncftp_3.2.6-1_iphoneos-arm.deb
+Size: 196530
+MD5sum: bc65d957adb1807145571f60445e7d21
+SHA1: fb6ae1600adc902e28910afb7bd4f7c4033c83e6
+Section: Networking
+Priority: standard
+Multi-Arch: foreign
+Description: the best ftp client known to man
+Tag: purpose::console, role::hacker
+
+Package: ncurses
+Version: 6.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 7064
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses5-libs
+Filename: debs/1443.00/ncurses_6.1-1_iphoneos-arm.deb
+Size: 337854
+MD5sum: aff0061558395fdd3108dcaa0f454e6e
+SHA1: ab30674aef8848deb62dbcae8ea664e8823ad668
+Section: System
+Priority: required
+Description: feature-complete terminal library
+Name: New Curses
+Tag: purpose::library, role::developer
+
+Package: ncurses5-libs
+Version: 5.9-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2288
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/ncurses5-libs_5.9-1_iphoneos-arm.deb
+Size: 174740
+MD5sum: 42d7fe41d6350eeec74843a1cfcdd013
+SHA1: ad2ad37efc7719f8d09979db32648f12173c171e
+Section: System
+Priority: required
+Description: feature-complete terminal library
+Name: New Curses
+Tag: purpose::library, role::developer
+
+Package: neon
+Version: 0.26.4-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 776
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: expat, libssl1.0
+Filename: debs/1443.00/neon_0.26.4-2_iphoneos-arm.deb
+Size: 87232
+MD5sum: d990811f6ff4778ab7f9d05fc496d593
+SHA1: 30255fd232d66e163eeb03f79a86d36cb4005263
+Section: Networking
+Priority: standard
+Description: HTTP and WebDAV client library
+Tag: purpose::library, role::developer
+
+Package: net.siguza.ios-kern-utils
+Version: 1.4.1
+Architecture: iphoneos-arm
+Maintainer: Siguza <siguza@siguza.net>
+Filename: debs/1443.00/net.siguza.ios-kern-utils_1.4.1_iphoneos-arm.deb
+Size: 55626
+MD5sum: f2423e2c9a458d81745a0ea14e08a399
+SHA1: 8b995d84217a75efd7e3d7217af335669b16fec0
+Section: Development
+Multi-Arch: foreign
+Homepage: https://github.com/Siguza/ios-kern-utils
+Description: kdump & friends
+ Utilities for playing with the kernel. Requires tfp0 patch.<br>
+ Run with -h for help.<br>
+ <a href="https://github.com/Siguza/ios-kern-utils">Free and open source</a>, forked from <a href="https://github.com/saelo/ios-kern-utils">saelo</a>.
+Author: Siguza <siguza@siguza.net>
+Name: kern-utils
+
+Package: netcat
+Version: 0.7.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 160
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/netcat_0.7.1-1_iphoneos-arm.deb
+Size: 15372
+MD5sum: 3bb4405d5d6ffce3bfe2ae6587af9bf0
+SHA1: 4c9a91399d815c72d3c58a0107f0590bcf45e1d4
+Section: Networking
+Priority: important
+Multi-Arch: foreign
+Description: simple socket manipulation tool
+Tag: purpose::console, role::hacker
+
+Package: nettle
+Version: 3.4.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2480
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libgmp10
+Filename: debs/1443.00/nettle_3.4.1-1_iphoneos-arm.deb
+Size: 282592
+MD5sum: 1ddd741edb10bf62061a3c2f5e6c6bb2
+SHA1: 8e305e64901157ad0a394a35748cd5faefd05897
+Section: Security
+Priority: optional
+Homepage: https://gmplib.org/
+Description: Nettle is a cryptographic library
+Name: Nettle
+Tag: purpose::library, role::developer
+
+Package: network-cmds
+Version: 543-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1968
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: firmware (>= 9.0) | rtadvd
+Filename: https://apt.bingner.com/debs/1443.00/network-cmds_543-1_iphoneos-arm.deb
+Size: 142520
+MD5sum: 795ccf9c6d53dd60d2f74f7a601f474f
+SHA1: 962f08d6b22bcdd1e9cea3d9b324e861d1630a66
+Section: Networking
+Priority: important
+Description: arp, ifconfig, netstat, route, traceroute
+Name: Network Commands
+Tag: purpose::console, role::hacker
+
+Package: nmap
+Version: 7.70-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 49864
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: liblua5.3, libpcap1, libssh2, libssl1.0, pcre
+Filename: debs/1443.00/nmap_7.70-1_iphoneos-arm.deb
+Size: 4385252
+MD5sum: f6ce56778381ff2e83e957b9771876e0
+SHA1: ebe0a9890e8edb2b335e0514e0dc57d8135c6638
+Section: Networking
+Priority: standard
+Description: analyze and scan remote network hosts
+Name: Nmap
+Tag: purpose::console, role::hacker
+
+Package: nodejs
+Version: 12.3.1-2
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 106320
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libc-ares2, libnghttp2-14, libssl1.1.1
+Filename: debs/1443.00/nodejs_12.3.1-2_iphoneos-arm.deb
+Size: 8239084
+MD5sum: 95a01522a6ca8d51bf6b42f16454e872
+SHA1: 66b7dbffbe8bbc3964eb6827eb33bf1b8ca091c7
+Section: Scripting
+Priority: optional
+Description: Platform built on V8 to build network applications
+Name: Node
+Tag: purpose::console, role::hacker
+
+Package: npth
+Version: 1.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 184
+Pre-Depends: dpkg (>= 1.14.25-8)
+Conflicts: gnupth
+Filename: debs/1443.00/npth_1.6-1_iphoneos-arm.deb
+Size: 12002
+MD5sum: 36011c07ba3f7bfd18615d21bec680fa
+SHA1: a9d8edfb3fbf20e594b608ce0ece1e375f009acd
+Section: Development
+Priority: optional
+Multi-Arch: foreign
+Description: portable threading library used by X
+Name: New GNU Portable Threads
+Tag: purpose::library, role::developer
+
+Package: odcctools
+Version: 895-3
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 16504
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ld64, libssl1.0, llvm-clang, uuid
+Filename: debs/1443.00/odcctools_895-3_iphoneos-arm.deb
+Size: 895476
+MD5sum: 2b3fb2d92ccf387a8450c1ceac09ebb7
+SHA1: 431c0aa126528c9d572f5bd7d1be921f538ca86b
+Section: Development
+Priority: optional
+Homepage: http://code.google.com/p/iphone-dev/
+Description: linker and assembler for the iPhone
+Depiction: http://cydia.saurik.com/info/odcctools/
+Name: Darwin CC Tools
+Tag: purpose::console, role::developer
+
+Package: openssh
+Version: 7.9p1-3
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 9496
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0
+Filename: https://apt.bingner.com/debs/1443.00/openssh_7.9p1-3_iphoneos-arm.deb
+Size: 612852
+MD5sum: 6ff3a2ff19b7d26c781347b8b8609140
+SHA1: ee950b1fceaa8b9c3adfe4cab3f50cf6a11b41a8
+Section: Networking
+Priority: important
+Description: secure remote access between machines
+Depiction: http://cydia.saurik.com/info/openssh/
+Name: OpenSSH
+Tag: purpose::daemon, purpose::console, role::enduser
+
+Package: openssl
+Version: 1.0.2s-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1264
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0 (>= 1.0.2s), firmware (>=11.0) | libssl0.9.8
+Filename: https://apt.bingner.com/debs/1443.00/openssl_1.0.2s-1_iphoneos-arm.deb
+Size: 188198
+MD5sum: 5a74d9f011c59e1bdbcd60bab18c3ce2
+SHA1: 92a539cbff52ee644f957af26f29e26e8924225f
+Section: Security
+Priority: standard
+Description: OpenSSL tools
+Name: OpenSSL
+Tag: purpose::library, role::developer
+
+Package: org.thebigboss.repo.icons
+Version: 1.0
+Architecture: all
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 48
+Replaces: cydia, bigboss
+Filename: https://apt.bingner.com/debs/1443.00/org.thebigboss.repo.icons_1.0.deb
+Size: 11484
+MD5sum: f1f86fefdfdbb89430e6cfa6d66f94b6
+SHA1: 2760583abf2cef605769ef861dd5c171e899a4a4
+Section: Repositories
+Priority: optional
+Multi-Arch: foreign
+Description: locally cached package icons from BigBoss
+Name: BigBoss Icon Set
+
+Package: p11-kit
+Version: 0.23.12-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 8344
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libtasn1
+Filename: debs/1443.00/p11-kit_0.23.12-1_iphoneos-arm.deb
+Size: 431450
+MD5sum: 13ca381027a22db79653b078d0cc941c
+SHA1: 93ca94471ea71bf9e0be0df68905994a11da6a27
+Section: Security
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://p11-glue.github.io/p11-glue/p11-kit.html
+Description: p11-glue utilities
+Tag: purpose::library, role::developer
+
+Package: p7zip
+Version: 16.02-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 9080
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/p7zip_16.02-1_iphoneos-arm.deb
+Size: 930130
+MD5sum: 6661ea346cd9f07b626384869fbab414
+SHA1: 1f1bd63961328c1a33096abaacdf1f8ca7934eb8
+Section: Archiving
+Priority: optional
+Multi-Arch: foreign
+Description: claims to be a good compressor
+Name: 7-zip (POSIX)
+Tag: purpose::console, role::hacker
+
+Package: patch
+Version: 2.7.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 456
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/patch_2.7.6-1_iphoneos-arm.deb
+Size: 80332
+MD5sum: 76af23b9637ee1a9dfd6c5924fe47aed
+SHA1: 52ce0da5d2869dbc06aa0464bc58f8576c958c10
+Section: Development
+Priority: important
+Multi-Arch: foreign
+Description: merge a difference onto a file
+Tag: purpose::console, role::hacker
+
+Package: pcre
+Version: 8.42-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1800
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/pcre_8.42-1_iphoneos-arm.deb
+Size: 180720
+MD5sum: 44135f809a1a1a1b8ed79ad157c82616
+SHA1: ae5e7721bf1b2b1434213f4651545aa7bf41d7a9
+Section: Development
+Priority: required
+Multi-Arch: foreign
+Description: Perl-compatible regular expressions
+Tag: purpose::library, role::developer
+
+Package: pcre2
+Version: 10.31-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1880
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/pcre2_10.31-1_iphoneos-arm.deb
+Size: 208482
+MD5sum: cfee18053a2bebd4e14366382a584d65
+SHA1: ecc0e6428f3c646731a15769f2b1a7453d70cdb4
+Section: Development
+Priority: required
+Multi-Arch: foreign
+Description: Perl-compatible regular expressions
+Tag: purpose::library, role::developer
+
+Package: perl
+Version: 5.28.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 107352
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/perl_5.28.0-1_iphoneos-arm.deb
+Size: 7888760
+MD5sum: a77339e29459b93f805bd4b34eb55bb3
+SHA1: c49b0fc8adda6d0a47bf1071b56c1d707e7a46cf
+Section: Scripting
+Priority: optional
+Description: awesome combination of sed and awk
+Name: Perl
+Tag: purpose::console, role::hacker
+
+Package: pincrush
+Version: 0.9.2-1
+Architecture: iphoneos-arm
+Maintainer: Dustin Howett <dustin@howett.net>
+Installed-Size: 164
+Filename: https://apt.bingner.com/debs/1443.00/pincrush_0.9.2-1_iphoneos-arm.deb
+Size: 64440
+MD5sum: 6a286af8d1529ab9767e0a478dfad523
+SHA1: fa59bca702cfc288f7f8c065e69ec78202fe0cff
+Section: Utilities
+Homepage: http://howett.net/pincrush
+Description: optimize PNGs just like Apple does
+ pincrush is an open, cross-platform alternative to Apple's proprietary PNG mangler, to optimize PNGs for display on iPhoneOS devices.
+Tag: purpose::console, role::hacker
+Author: Dustin Howett <dustin@howett.net>
+Name: pincrush
+
+Package: pkg-config
+Version: 0.29.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 336
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: glib
+Filename: https://apt.bingner.com/debs/1443.00/pkg-config_0.29.2-1_iphoneos-arm.deb
+Size: 19616
+MD5sum: 638c25ef5e65f2bf8ad8a0ba5724e86b
+SHA1: 030fc05e13db877ea909b404a6b70c76069361d5
+Section: Development
+Priority: optional
+Homepage: http://pkg-config.freedesktop.org/
+Description: allows tight coupling and sloppy PATHs
+Name: Package Config
+Tag: purpose::console, role::hacker
+
+Package: png
+Version: 1.6.35-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1184
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/png_1.6.35-1_iphoneos-arm.deb
+Size: 141846
+MD5sum: b8d37495e3a3a4f69669bdac9064e277
+SHA1: 680242da45b983bada71e5e32a11d92f24cbc730
+Section: Multimedia
+Priority: optional
+Multi-Arch: foreign
+Description: library for manipulating PNG files
+Tag: purpose::library, role::developer
+
+Package: pngcrush
+Version: 1.8.13-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 304
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: png
+Filename: https://apt.bingner.com/debs/1443.00/pngcrush_1.8.13-1_iphoneos-arm.deb
+Size: 37334
+MD5sum: e0f66299471463ceba011e89f83fde03
+SHA1: 5b0d11196f47bc0ad435fbd3dda069aab523fe19
+Section: Multimedia
+Priority: optional
+Homepage: http://pmt.sourceforge.net/pngcrush/
+Description: crushes PNG files into tiny storage cubes
+Author: Glenn Randers-Pehrson <glennrp@users.sf.net>
+Tag: purpose::console, role::hacker
+
+Package: profile.d
+Version: 0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 24
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bash
+Filename: https://apt.bingner.com/debs/1443.00/profile.d_0-1_iphoneos-arm.deb
+Size: 918
+MD5sum: 2f05a62dd5b01466f2e29b08cf356c29
+SHA1: 76520371e2711f524847510b86e14c594b25c0e5
+Section: Administration
+Priority: standard
+Multi-Arch: foreign
+Description: makes packaging for /etc/profile reasonable
+Name: Profile Directory
+Tag: purpose::console, role::hacker
+
+Package: pstree
+Version: 2.35-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 112
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: adv-cmds
+Filename: debs/1443.00/pstree_2.35-1_iphoneos-arm.deb
+Size: 6404
+MD5sum: 85ec457158099c24fa47e3b57c3d0acc
+SHA1: a54a95fa4654d7fe43558e956eec32266da18107
+Section: Utilities
+Priority: optional
+Multi-Arch: foreign
+Description: process forests are hard to see for the trees
+Tag: purpose::console, role::hacker
+
+Package: pthread-stubs
+Version: 0.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 16
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/pthread-stubs_0.1-1_iphoneos-arm.deb
+Size: 802
+MD5sum: ac2df56122e64d2c2305842159925221
+SHA1: d74838d94349596a7497ec83187bca8d4cfc12cc
+Section: X_Window
+Priority: optional
+Description: fills in missing pthread prototypes
+Tag: purpose::library, role::developer
+
+Package: python
+Version: 2.7.15-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 83888
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: berkeleydb, bzip2, expat, libffi, libssl1.0, libxml2, ncurses, readline, sqlite3, cydia (>= 1.0.2355-38)
+Filename: https://apt.bingner.com/debs/1443.00/python_2.7.15-2_iphoneos-arm.deb
+Size: 7684990
+MD5sum: 8a2531dfb85f514eed161ca45c72d401
+SHA1: c97d45f08a857f7deda0c107f83b9c19255b211d
+Section: Scripting
+Priority: optional
+Homepage: http://www.python.org/
+Description: architectural programming language
+Name: Python
+Tag: purpose::console, role::sysadmn
+
+Package: python3
+Version: 3.7.3-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 8
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: python3.7
+Filename: https://apt.bingner.com/debs/1443.00/python3_3.7.3-1_iphoneos-arm.deb
+Size: 636
+MD5sum: 1c202bc36a51766bbdca6ff6fdf30735
+SHA1: 5fc43bd9963f1a559a5fe6a4340f4801ce0e5d0e
+Section: Scripting
+Priority: optional
+Description: Interpreted, interactive, object-oriendted programming language.
+Name: Python 3
+Tag: purpose::console, role::hacker
+
+Package: python3.7
+Version: 3.7.3-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 256
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libpython3.7
+Filename: https://apt.bingner.com/debs/1443.00/python3.7_3.7.3-1_iphoneos-arm.deb
+Size: 3360
+MD5sum: 9c36acee5c044e39a40fce30f73d442e
+SHA1: 161eb1b430b5e246177298f41ac809135cd6a1b7
+Section: Scripting
+Priority: optional
+Description: Interpreted, interactive, object-oriendted programming language.
+Name: Python 3.7
+Tag: purpose::console, role::hacker
+
+Package: pzb
+Version: 1.0.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 208
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libfragmentzip
+Filename: debs/1443.00/pzb_1.0.1-1_iphoneos-arm.deb
+Size: 21370
+MD5sum: ac30a8984ff1db010c7c56112a4e7413
+SHA1: 10e2f49f7b89ed1357f6a4d6cc7a7d9d26110e1a
+Section: Archiving
+Priority: optional
+Description: partialZipBrowser is a commandline tool for browsing and downloading files from zip files on remote webserver
+Name: partialZipBrowser
+Tag: purpose::console, role::hacker
+
+Package: radare2
+Version: 2.7.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 59776
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/radare2_2.7.0-1_iphoneos-arm.deb
+Size: 4811024
+MD5sum: 0ff33b6889ac1ced7dca394518247a4b
+SHA1: 3a945e76b7d2a4308b67c7515e84bc4b8d48072a
+Section: Utilities
+Priority: optional
+Homepage: http://www.radare.org/
+Description: free and advanced command line hexadecimal editor. The project aims to create a complete, portable, multi-architecture, unix-like toolchain for reverse engineering.
+Name: Radare
+Tag: purpose::console, role::hacker
+
+Package: rdesktop
+Version: 1.6.0-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 896
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0, x11, xt
+Filename: debs/1443.00/rdesktop_1.6.0-2_iphoneos-arm.deb
+Size: 94882
+MD5sum: dd99d88cad4ca016c0b93853cdb27bab
+SHA1: 00ceb24c8661b2647e410253614b292e93995c9d
+Section: Networking
+Priority: optional
+Homepage: http://www.rdesktop.org/
+Description: remotely access windows machines
+Tag: purpose::x, role::developer
+
+Package: readline
+Version: 8.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1136
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: https://apt.bingner.com/debs/1443.00/readline_8.0-1_iphoneos-arm.deb
+Size: 129432
+MD5sum: 7ad4f53a452eb73cc40e0f78ade4d97e
+SHA1: 6999462680a86071f76c022e24fc1a64dfeaf608
+Section: Development
+Priority: required
+Description: command-line history management
+Tag: purpose::library, role::developer
+
+Package: rsync
+Version: 3.1.3-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1056
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/rsync_3.1.3-2_iphoneos-arm.deb
+Size: 204536
+MD5sum: b2dd5ce3b38d3dda17367f88d7e37b2d
+SHA1: 7caf0f654bbb562baba0bc8100c38b55ae29fbf8
+Section: Networking
+Priority: important
+Homepage: http://www.samba.org/rsync/
+Description: synchronize files between computers
+Tag: purpose::console, role::hacker
+
+Package: ruby
+Version: 2.5.3-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 44896
+Pre-Depends: dpkg (>= 1.14.25-8), dpkg (>= 1.18.25-4)
+Depends: berkeleydb, libssl1.0, ncurses, readline
+Conflicts: rubygems
+Replaces: rubygems
+Provides: rubygems
+Filename: debs/1443.00/ruby_2.5.3-2_iphoneos-arm.deb
+Size: 3810166
+MD5sum: 1a8e134d56355370fccd24ada011b5a7
+SHA1: 4b319b24f1c42668eaf628a111a3a0f9d84e49b4
+Section: Scripting
+Priority: optional
+Description: optimized for developer happiness
+Name: Ruby
+Tag: purpose::console, role::hacker
+
+Package: rzip
+Version: 2.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 152
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/rzip_2.1-1_iphoneos-arm.deb
+Size: 11716
+MD5sum: e7f05d0eccd57a6422a748e9b759d8f7
+SHA1: f76e934f86279287ae12bca3b6b35c7a678eadbd
+Section: Archiving
+Priority: standard
+Multi-Arch: foreign
+Description: the best compression algorithm
+Tag: purpose::console, role::hacker
+
+Package: sc-im
+Version: 0.7.0-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 1088
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libxml2, libzip, ncurses
+Filename: debs/1443.00/sc-im_0.7.0-1_iphoneos-arm.deb
+Size: 139400
+MD5sum: c8aedf8dc6ad6364d07b8644143e30db
+SHA1: 597e661b9701b7e4b646a81d294ca787497d031d
+Section: Utilities
+Priority: optional
+Description: Spreadsheet program for the terminal, using ncurses
+Name: SC-IM
+Tag: purpose::console, role::hacker
+
+Package: science.xnu.injector
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: Pwn20wnd
+Installed-Size: 88
+Filename: https://apt.bingner.com/debs/1443.00/science.xnu.injector_0.0.1_iphoneos-arm.deb
+Size: 12650
+MD5sum: ca1ebc3e8edde7b621c64e51dc5363dd
+SHA1: b659b876598bb8472e618723f97c71a9e47ffe26
+Section: System
+Description: Inject files to trust cache
+Tag: role::hacker
+Author: Pwn20wnd
+Name: Injector
+
+Package: science.xnu.injector
+Version: 0.3
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 88
+Filename: https://apt.bingner.com/debs/1443.00/science.xnu.injector_0.3_iphoneos-arm.deb
+Size: 12662
+MD5sum: 1d270bb594d92c4bdd80d3cd387045f6
+SHA1: 474d852ca2dab234a9906365665d4b21b0891df1
+Section: System
+Description: Inject files to kernel trust cache
+Tag: role::hacker
+Author: Sam Bingner <maintainer@sbdhi.com>
+Name: Injector
+
+Package: science.xnu.undecimus.resources
+Version: 0.10
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 484
+Depends: firmware (>= 11.0), com.bingner.spawn, science.xnu.injector
+Filename: https://apt.bingner.com/debs/1443.00/science.xnu.undecimus.resources_0.10_iphoneos-arm.deb
+Size: 65122
+MD5sum: 4688acfda757e6846f84cf232770b608
+SHA1: f3ac1ec1dd71dfbeec1eee2082d1f12561e8809a
+Section: System
+Description: Resources used by Unc0ver
+Name: Unc0ver Jailbreak Resources
+
+Package: science.xnu.undecimus.resources
+Version: 0.11
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 484
+Depends: firmware (>= 11.0), com.bingner.spawn, science.xnu.injector
+Filename: https://apt.bingner.com/debs/1443.00/science.xnu.undecimus.resources_0.11_iphoneos-arm.deb
+Size: 65188
+MD5sum: b137f9c790d7992a3e6e4344c7c5d033
+SHA1: fda621dacba353cf6f074234492b0c98985b751c
+Section: System
+Description: Resources used by Unc0ver
+Name: Unc0ver Jailbreak Resources
+
+Package: science.xnu.undecimus.resources
+Version: 0.4
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 480
+Pre-Depends: science.xnu.injector
+Depends: firmware (>= 11.0), com.bingner.spawn
+Filename: https://apt.bingner.com/debs/1443.00/science.xnu.undecimus.resources_0.4_iphoneos-arm.deb
+Size: 64492
+MD5sum: ba19b265be444e748ed1b553ce57ee04
+SHA1: 84b9f3b60cb5e6faf2ef482d45935c1c3bb65190
+Section: System
+Description: Resources used by Unc0ver
+Name: Unc0ver Jailbreak Resources
+
+Package: science.xnu.undecimus.resources
+Version: 0.5
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 480
+Depends: firmware (>= 11.0), com.bingner.spawn, science.xnu.injector
+Filename: debs/1443.00/science.xnu.undecimus.resources_0.5_iphoneos-arm.deb
+Size: 64456
+MD5sum: 3f30f62ac803cb2bf95eaae1104b2b2b
+SHA1: 918b91467662ac145d6ba5a32abf9bd15fca5880
+Section: System
+Description: Resources used by Unc0ver
+Name: Unc0ver Jailbreak Resources
+
+Package: science.xnu.undecimus.resources
+Version: 0.6
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 480
+Depends: firmware (>= 11.0), com.bingner.spawn, science.xnu.injector
+Filename: https://apt.bingner.com/debs/1443.00/science.xnu.undecimus.resources_0.6_iphoneos-arm.deb
+Size: 64450
+MD5sum: 5070287f25bfbd4d0d2305925ffa62d9
+SHA1: 2d10e19b3fa3131c67dc2545ad50e2c95817c928
+Section: System
+Description: Resources used by Unc0ver
+Name: Unc0ver Jailbreak Resources
+
+Package: science.xnu.undecimus.resources
+Version: 0.7
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 480
+Depends: firmware (>= 11.0), com.bingner.spawn, science.xnu.injector
+Filename: debs/1443.00/science.xnu.undecimus.resources_0.7_iphoneos-arm.deb
+Size: 64414
+MD5sum: 12372c922f53527443046a26e7437eb8
+SHA1: ae1859316abeb39bbbf20a417482c8e5ec49e455
+Section: System
+Description: Resources used by Unc0ver
+Name: Unc0ver Jailbreak Resources
+
+Package: science.xnu.undecimus.resources
+Version: 0.8
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 560
+Depends: firmware (>= 11.0), com.bingner.spawn, science.xnu.injector
+Filename: debs/1443.00/science.xnu.undecimus.resources_0.8_iphoneos-arm.deb
+Size: 73542
+MD5sum: 68a900dba59a863213785a4c463e6f5b
+SHA1: f71a81246c845cac4a1a0feb25aecd57778f288c
+Section: System
+Description: Resources used by Unc0ver
+Name: Unc0ver Jailbreak Resources
+
+Package: science.xnu.undecimus.resources
+Version: 0.9
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 484
+Depends: firmware (>= 11.0), com.bingner.spawn, science.xnu.injector
+Filename: debs/1443.00/science.xnu.undecimus.resources_0.9_iphoneos-arm.deb
+Size: 65124
+MD5sum: 80ae8d3be361f86e09c0a68b52be3285
+SHA1: 17ac64fcc553d0e5f02f995594f697dcd5168a62
+Section: System
+Description: Resources used by Unc0ver
+Name: Unc0ver Jailbreak Resources
+
+Package: screen
+Version: 4.0.3-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1376
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: debs/1443.00/screen_4.0.3-1_iphoneos-arm.deb
+Size: 321534
+MD5sum: 5e1f62be72f595888312099fe868c565
+SHA1: 549c9b053da16e8bc1985ca3371450f1fda82354
+Section: Terminal_Support
+Priority: important
+Multi-Arch: foreign
+Description: multiplexes a terminal into many
+Name: Screen
+Tag: purpose::console, role::hacker
+
+Package: sed
+Version: 4.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 440
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/sed_4.5-1_iphoneos-arm.deb
+Size: 76688
+MD5sum: a020882dac121afa4b03c63304d729b0
+SHA1: b6a8b96821056af0e49f9888f969cd6b136434a3
+Section: Utilities
+Priority: important
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/sed/
+Description: edits streams of text using patterns
+Tag: purpose::console, role::hacker
+
+Package: sgrep
+Version: 1.94a-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 384
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/sgrep_1.94a-1_iphoneos-arm.deb
+Size: 58462
+MD5sum: 6e8391f7b6184d868555b7fdf044d91e
+SHA1: c9d744a8b7b9a2c2f6c54179f1fcbc0c48f03262
+Section: Utilities
+Priority: optional
+Multi-Arch: foreign
+Description: search patterned data using patterns
+Name: Structured Grep
+Tag: purpose::console, role::hacker
+
+Package: shell-cmds
+Version: 118-8
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 632
+Pre-Depends: dpkg (>= 1.14.25-8)
+Provides: killall, which
+Filename: https://apt.bingner.com/debs/1443.00/shell-cmds_118-8_iphoneos-arm.deb
+Size: 12684
+MD5sum: bc14fdd53bf742af2a9b5f49e7d2ccee
+SHA1: c748c3fbd4f83807e078a96dbd4b3af013e356bb
+Section: Administration
+Priority: important
+Description: killall, mktemp, renice, time, which
+Tag: purpose::console, role::hacker
+
+Package: sm
+Version: 1.2.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 256
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ice, uuid
+Filename: debs/1443.00/sm_1.2.2-1_iphoneos-arm.deb
+Size: 14552
+MD5sum: d6fb43a23c88fbdd991924b6db2217df
+SHA1: f5b49a88cd6eeb524a48746a4ce318a654525bf4
+Section: X_Window
+Priority: optional
+Description: session management library for X
+Name: Session Management
+Tag: purpose::library, role::developer
+
+Package: socat
+Version: 1.7.3.2-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1104
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0, readline
+Filename: debs/1443.00/socat_1.7.3.2-2_iphoneos-arm.deb
+Size: 118284
+MD5sum: 244c10d5d8dbac5f0a40baa6e8676c05
+SHA1: d96734addbe12dfe232db04e2916573fdf3fc604
+Section: Networking
+Priority: optional
+Homepage: http://www.dest-unreach.org/socat/
+Description: "netcat++" (post-increment, not pre-)
+Name: SOcket CAT
+Tag: purpose::console, role::hacker
+
+Package: sqlite3
+Version: 3.24.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 4304
+Pre-Depends: dpkg (>= 1.14.25-8)
+Replaces: sqlite3 (<= 3.5.9-11)
+Filename: debs/1443.00/sqlite3_3.24.0-1_iphoneos-arm.deb
+Size: 700486
+MD5sum: 26edebeeed5c09a6f1565eaf0a39786d
+SHA1: ba4acda9c0c8c80a1b9fbb7845ca598b066a173b
+Section: Data_Storage
+Priority: standard
+Description: embedded database used by iPhoneOS
+Name: SQLite 3.x
+Tag: purpose::library, role::developer
+
+Package: sqlite3-dylib
+Version: 3.24.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2944
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: firmware (<< 3.0)
+Replaces: sqlite3 (<= 3.5.9-11)
+Filename: debs/1443.00/sqlite3-dylib_3.24.0-1_iphoneos-arm.deb
+Size: 523796
+MD5sum: 4ee5e353cb16803a89927001efadc6f9
+SHA1: 8472810b104b826aa2bd9c18997420f3ba07c601
+Section: Data_Storage
+Priority: required
+Multi-Arch: foreign
+Description: upgraded SQLite library for iPhoneOS 2.x
+Name: SQLite 3.x Upgrade
+Tag: purpose::library, role::developer
+
+Package: srelay
+Version: 0.4.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 160
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/srelay_0.4.6-1_iphoneos-arm.deb
+Size: 17422
+MD5sum: 60dda789f758d15d75d84d262686ed2d
+SHA1: dedf3ea0cfba21c19e3d51592af37e6182ae5ebb
+Section: Networking
+Priority: optional
+Description: simple SOCKS 4/5 proxy server
+Name: SOCKS Relay
+Tag: purpose::daemon, role::hacker
+
+Package: stunnel
+Version: 5.51-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 528
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0
+Filename: debs/1443.00/stunnel_5.51-1_iphoneos-arm.deb
+Size: 64086
+MD5sum: 583ddead5c53a087ef9d3267fb625f89
+SHA1: 97e7f95d4d627e596c3778d236228e8d3b8a15c6
+Section: Networking
+Priority: standard
+Homepage: http://www.stunnel.org/
+Description: wraps connections with SSL support
+Name: Stunnel
+Tag: purpose::console, purpose::daemon, role::hacker
+
+Package: subversion
+Version: 1.11.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 17872
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: apr-util, apr, expat, libserf, libutf8proc, lz4
+Filename: https://apt.bingner.com/debs/1443.00/subversion_1.11.0-1_iphoneos-arm.deb
+Size: 1764984
+MD5sum: 60a56bfc52355c4402668054f13eb7b9
+SHA1: 3c5de504a6d494127bd024fccba50e5fd76da754
+Section: Data_Storage
+Priority: standard
+Description: modern version control system
+Name: Subversion
+Tag: purpose::console, role::hacker
+
+Package: sudo
+Version: 1.8.27-3
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2736
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/sudo_1.8.27-3_iphoneos-arm.deb
+Size: 271242
+MD5sum: fccf9e2b36bdd20122d49e303f8c98f9
+SHA1: 8b5e0ed3336a4e3ba115a83f924370ffa3759c1f
+Section: Administration
+Priority: standard
+Description: temporarily assume root priviledges
+Name: Sudo
+Tag: purpose::console, role::hacker
+
+Package: system-cmds
+Version: 790.30.1-2
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2624
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: firmware-sbin
+Provides: login, passwd, reboot
+Filename: https://apt.bingner.com/debs/1443.00/system-cmds_790.30.1-2_iphoneos-arm.deb
+Size: 94086
+MD5sum: 45e5251b9de0f60e09e7f75a87e8833a
+SHA1: e69a0933943a19191ccfe766556e7ac0ae58e301
+Section: Administration
+Priority: required
+Description: iostat, login, passwd, sync, sysctl
+Tag: purpose::console, role::hacker
+
+Package: tar
+Version: 1.30-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1096
+Depends: bzip2, gzip, lzma, xz
+Conflicts: dpkg (=1.18.24)
+Filename: https://apt.bingner.com/debs/1443.00/tar_1.30-2_iphoneos-arm.deb
+Size: 241822
+MD5sum: 376cc0cbc3427dccf348a362e1a8f0e1
+SHA1: abf3dc91c0358805cc253b20333e0f61bb6915d6
+Section: Archiving
+Priority: required
+Homepage: http://www.gnu.org/software/tar/
+Description: tool for making tape archives
+Name: Tape Archive
+Tag: purpose::console, role::hacker
+
+Package: tcpdump
+Version: 4.9.2-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 4024
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libpcap, libssl1.0
+Filename: debs/1443.00/tcpdump_4.9.2-2_iphoneos-arm.deb
+Size: 306692
+MD5sum: 2b7b415e7a6a0a51372d28e8e461a4ce
+SHA1: 3fe0be08f10ce11281f0cd8b2ef306b8da5865c2
+Section: Networking
+Priority: standard
+Description: dumps and stores network traffic
+Tag: purpose::console, role::hacker
+
+Package: tcsh
+Version: 6.20-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 896
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: debs/1443.00/tcsh_6.20-1_iphoneos-arm.deb
+Size: 165514
+MD5sum: 0a32b3927a02f87f157178e3b7792027
+SHA1: c0b7a22b2d0930284bec807623c87d1f4219bae2
+Section: Terminal_Support
+Priority: optional
+Homepage: http://www.tcsh.org/
+Description: enhanced version of the BSD C Shell
+Name: TENEX C Shell
+Tag: purpose::console, role::hacker
+
+Package: tiff
+Version: 4.0.9-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3480
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libjpeg-turbo, xz
+Filename: debs/1443.00/tiff_4.0.9-1_iphoneos-arm.deb
+Size: 268226
+MD5sum: 1a42e69749890507d881090888c66511
+SHA1: 9d05d78a7d06543e72a0530edd5e86273854ea62
+Section: Multimedia
+Priority: optional
+Description: Tagged Image File Format library
+Name: TIFF
+Tag: purpose::library, role::developer
+
+Package: tmux
+Version: 2.8-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1096
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libevent, ncurses
+Filename: debs/1443.00/tmux_2.8-1_iphoneos-arm.deb
+Size: 174144
+MD5sum: 4b79968248a1c01d896bd557f4d02cff
+SHA1: 8cbdc0a52b2beef44672b656e5960bc4e9af0662
+Section: Terminal_Support
+Priority: important
+Description: multiplexes a terminal into many
+Tag: purpose::console, role::hacker
+
+Package: top
+Version: 39-1
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 448
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: debs/1443.00/top_39-1_iphoneos-arm.deb
+Size: 58210
+MD5sum: 6ebeedfcde93e65d3dd1584bc7b61e49
+SHA1: 2025aae6997ec3db2b1e50c3ddd7dad56aa09d8f
+Section: Administration
+Priority: important
+Multi-Arch: foreign
+Description: at-a-glance process watching tool
+Tag: purpose::console, role::hacker
+
+Package: transmission
+Version: 2.94-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 9848
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: curl, libevent
+Filename: debs/1443.00/transmission_2.94-1_iphoneos-arm.deb
+Size: 633018
+MD5sum: ff17eb9eae2673cccddee28559561b61
+SHA1: bcfb6c1232b5d2bcba66c517924aaf0d7671cdec
+Section: Networking
+Priority: optional
+Description: Lightweight BitTorrent client
+Name: Transmission
+Tag: purpose::console, role::hacker
+
+Package: tsschecker
+Version: 263-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 208
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: curl, libfragmentzip, libirecovery, libplist
+Filename: debs/1443.00/tsschecker_263-1_iphoneos-arm.deb
+Size: 24056
+MD5sum: 1d67eb2bbb85fad6e32c87e273728380
+SHA1: 44c3db233bd4359ffd8340ee32f6a47823080cf3
+Section: Development
+Priority: optional
+Description: tsschecker is a powerful tool to check tss signing status of various devices and iOS versions.
+Name: TSS Checker
+Tag: purpose::console, role::developer
+
+Package: uikittools
+Version: 1.1.14-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1168
+Depends: coreutils-bin, findutils
+Filename: https://apt.bingner.com/debs/1443.00/uikittools_1.1.14-1_iphoneos-arm.deb
+Size: 40932
+MD5sum: 73ca2bfa8567f5399259fc43cfd653a3
+SHA1: 96f77561a5b57f29ab4280489e74677cf8380b05
+Section: Utilities
+Priority: optional
+Homepage: http://tukaani.org/lzma/
+Description: UIKit/GraphicsServices command line access
+Depiction: http://cydia.saurik.com/info/uikittools/
+Name: UIKit Tools
+Tag: purpose::console, role::hacker
+
+Package: unrar
+Version: 5.6.4-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 736
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/unrar_5.6.4-1_iphoneos-arm.deb
+Size: 118130
+MD5sum: 3ec416b41c2fa800cd2cbd957213cdbf
+SHA1: b1be3febc8b517410eef1ca2f29869d28c857c00
+Section: Archiving
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.rarlab.com/rar_add.htm
+Description: de-compresses files in rar format
+Tag: purpose::console, role::hacker
+
+Package: unzip
+Version: 6.0+deb9u1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 808
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/unzip_6.0+deb9u1-1_iphoneos-arm.deb
+Size: 90196
+MD5sum: 75f0c28bdfd5dd04c1f5d48ba9f8860f
+SHA1: 6fc3212fd33d1ce912f4e7fb810c6be38594149c
+Section: Archiving
+Priority: important
+Description: de-compesses files in zip format
+Tag: purpose::console, role::hacker
+
+Package: uuid
+Version: 1.6.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 384
+Filename: https://apt.bingner.com/debs/1443.00/uuid_1.6.2-1_iphoneos-arm.deb
+Size: 24492
+MD5sum: 38330da694cb92480d0c7b3d50f4cb34
+SHA1: c2bdde800a4b0f485a03724d3b8f62e5c19756f6
+Section: System
+Priority: important
+Description: universally unique identifiers
+Name: UUID Generator
+Tag: purpose::library, purpose::console, role::developer
+
+Package: vbindiff
+Version: 3.0b1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 176
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: debs/1443.00/vbindiff_3.0b1-1_iphoneos-arm.deb
+Size: 18656
+MD5sum: 672ed753e83d514f93bf313148839efc
+SHA1: 0eb9b52041ecfd26d998995c835dafc96d7b215f
+Section: Text_Editors
+Priority: optional
+Multi-Arch: foreign
+Description: hex editor and differencing tool
+Name: VBinDiff
+Tag: purpose::console, role::hacker
+
+Package: vfdecrypt
+Version: 0-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 120
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0
+Filename: debs/1443.00/vfdecrypt_0-2_iphoneos-arm.deb
+Size: 6532
+MD5sum: 32d36f878b9743583740c13870c945c1
+SHA1: dc64a1a7427e177f22b0de08af3c65a0414c1f69
+Section: Security
+Priority: optional
+Description: decryption utility for iPhone images
+Name: VFDecrypt
+Tag: purpose::console, role::hacker
+
+Package: vim
+Version: 8.1.1471-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 59616
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: debs/1443.00/vim_8.1.1471-1_iphoneos-arm.deb
+Size: 5848350
+MD5sum: 04661c7c8f8efc86e4d31f2479b4e7b2
+SHA1: d11eb29a9c7dd412202d084e4010d78211b0e289
+Section: Text_Editors
+Priority: standard
+Description: the best syntax highlighter, ever
+Name: Vi IMproved
+Tag: purpose::console, role::hacker
+
+Package: wget
+Version: 1.19.5-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1112
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: gettext, libssl1.0
+Filename: https://apt.bingner.com/debs/1443.00/wget_1.19.5-2_iphoneos-arm.deb
+Size: 199810
+MD5sum: 94d0f5858b02330e081707db5c9937df
+SHA1: 4e7672da7e35b086e060ecda0115c41441b105e9
+Section: Networking
+Priority: important
+Description: simple HTTP file transfer client
+Tag: purpose::console, role::hacker
+
+Package: whois
+Version: 5.3.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 152
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/whois_5.3.2-1_iphoneos-arm.deb
+Size: 13810
+MD5sum: b40ee800b72bbac323568b36ad67bb16
+SHA1: 5dae29c511d61cd8e96a54195634c7f15b0340bb
+Section: Networking
+Priority: important
+Multi-Arch: foreign
+Description: client for querying whois servers
+Tag: purpose::console, role::hacker
+
+Package: x11
+Version: 1.6.6-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 6744
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: inputproto, kbproto, xcb, xextproto, xf86bigfontproto, xtrans
+Filename: debs/1443.00/x11_1.6.6-1_iphoneos-arm.deb
+Size: 640526
+MD5sum: dc0e72eb9c2a9e5dec894343b1dda789
+SHA1: b4aea9ee806263e1c223174f58ababc3d1e05aa1
+Section: X_Window
+Priority: optional
+Description: core library used by X applications
+Tag: purpose::library, role::developer
+
+Package: x264
+Version: 0.157.2945-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 320
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libx264-157 (>= 0.157.2945)
+Filename: debs/1443.00/x264_0.157.2945-1_iphoneos-arm.deb
+Size: 40990
+MD5sum: af089213e8dce98d4616e608b1374d59
+SHA1: 213ce6e290dc80af43098fd577d543d741ce2680
+Section: Multimedia
+Priority: optional
+Description: Video encoder for the H.264/MPEG-4 AVC standard
+Tag: purpose::library, role::developer
+
+Package: x265
+Version: 3.0-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 280
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libx265-169
+Filename: debs/1443.00/x265_3.0-1_iphoneos-arm.deb
+Size: 31004
+MD5sum: 99ef2dcde40db842dd09cf919e75cd85
+SHA1: 2d54790b5397d7d08595298db2910f2490723a1e
+Section: Multimedia
+Priority: optional
+Description: video encoder for the H.265/HEV standard
+Tag: purpose::library, role::developer
+
+Package: xar
+Version: 1.6.1-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 512
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.0, libxml2
+Filename: debs/1443.00/xar_1.6.1-2_iphoneos-arm.deb
+Size: 56228
+MD5sum: 896431bd7040f4f4484e99f7da3d2f3a
+SHA1: 12f373e6a8d6cec6c9e572279ae1d3118562cb79
+Section: Archiving
+Priority: optional
+Homepage: http://code.google.com/p/xar/
+Description: easily extensible archive format
+Name: XAR
+Tag: purpose::console, role::hacker
+
+Package: xau
+Version: 1.0.8-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 144
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: xproto
+Filename: debs/1443.00/xau_1.0.8-1_iphoneos-arm.deb
+Size: 6290
+MD5sum: e404858903da46a8f5a36b30ba473bb1
+SHA1: 5db766dbc261d78c747df01fb22b3809b6483d18
+Section: X_Window
+Priority: optional
+Description: X authetication protocol library
+Tag: purpose::library, role::developer
+
+Package: xcb
+Version: 1.13-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 8864
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: pthread-stubs, xau, xcb-proto
+Filename: debs/1443.00/xcb_1.13-1_iphoneos-arm.deb
+Size: 278798
+MD5sum: 3bd63ca2828c2487b14617b401bb5e0d
+SHA1: 9c8e8133320205996f7247581e804909671f21be
+Section: X_Window
+Priority: optional
+Description: smaller, faster X protocol library
+Tag: purpose::library, role::developer
+
+Package: xcb-proto
+Version: 1.13-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1984
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/xcb-proto_1.13-1_iphoneos-arm.deb
+Size: 101926
+MD5sum: f93eb010c9a17c3c30e2fbb130a4591f
+SHA1: 6056732bb8ed2d49fe9996dbb8f203e544cfdf31
+Section: X_Window
+Priority: optional
+Description: prototypes for X client library
+Tag: purpose::library, role::developer
+
+Package: xext
+Version: 1.3.3-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 432
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: x11
+Filename: debs/1443.00/xext_1.3.3-1_iphoneos-arm.deb
+Size: 29880
+MD5sum: e1077a86d5ea584ebcea7ff9660a2cb3
+SHA1: 38208bb52ae18c93724d7f71e1232c82c240e299
+Section: X_Window
+Priority: optional
+Description: helper library for X extensions
+Tag: purpose::library, role::developer
+
+Package: xf86bigfontproto
+Version: 1.2.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 40
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/xf86bigfontproto_1.2.0-1_iphoneos-arm.deb
+Size: 1906
+MD5sum: 8e26c1e46c982568e13d2e56e88efe1e
+SHA1: b19b622f262e9c71179b1daedf08e5ceff18520c
+Section: X_Window
+Priority: optional
+Description: prototypes for X big fonts
+Tag: purpose::library, role::developer
+
+Package: xineramaproto
+Version: 1.1.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 48
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/xineramaproto_1.1.2-1_iphoneos-arm.deb
+Size: 3280
+MD5sum: f933ab4a5ac8fe028ecee1b69d7e9af3
+SHA1: dd9c1588259a05573da287fda6be84d3678f51a9
+Section: X_Window
+Priority: optional
+Multi-Arch: foreign
+Description: protoypes for Xinerama library
+Tag: purpose::library, role::developer
+
+Package: xml2
+Version: 0.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 440
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libxml2
+Filename: debs/1443.00/xml2_0.5-1_iphoneos-arm.deb
+Size: 8994
+MD5sum: dd8284cf5e960640e0bdaa5677616111
+SHA1: 314d1d5d79da4be2fca84eace63b588c05322730
+Section: Utilities
+Priority: optional
+Description: simple tools to help grep xml
+Tag: purpose::console, role::hacker
+
+Package: xproto
+Version: 7.0.31-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 856
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/xproto_7.0.31-1_iphoneos-arm.deb
+Size: 58956
+MD5sum: 5956d4a09cf38f701d7757296df8cefd
+SHA1: d6419d510049585f1a9645c347286081121fb3f8
+Section: X_Window
+Priority: optional
+Description: prototypes for core X libraries
+Tag: purpose::library, role::developer
+
+Package: xsltproc
+Version: 1.1.28-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 120
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/xsltproc_1.1.28-1_iphoneos-arm.deb
+Size: 7854
+MD5sum: 995360925ff293bfb61f7179b7180425
+SHA1: 921a9a2d27fc5957cd50734b5c573d2b682a70d8
+Section: Development
+Priority: optional
+Homepage: http://xmlsoft.org/XSLT/
+Description: XSLT 1.0 command line processor
+Tag: purpose::library, role::developer
+
+Package: xt
+Version: 1.1.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1528
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: sm, x11
+Filename: debs/1443.00/xt_1.1.5-1_iphoneos-arm.deb
+Size: 163832
+MD5sum: 8a7e018bf094d9d098cc6991bdea6d97
+SHA1: 127f1cb2df4fca6efb8c3f8a984468ae7c8e1f50
+Section: X_Window
+Priority: optional
+Description: X toolkit intrinsics library
+Tag: purpose::library, role::developer
+
+Package: xtrans
+Version: 1.3.5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 448
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/1443.00/xtrans_1.3.5-1_iphoneos-arm.deb
+Size: 35734
+MD5sum: 640486e775e881c14151ba24b2bc5f4d
+SHA1: 7b6ad54845bd0eb1b9cd5926f9e88d16130143d2
+Section: X_Window
+Priority: optional
+Description: X transport abstraction library
+Tag: purpose::library, role::developer
+
+Package: xz
+Version: 5.2.4-4
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1176
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: lzma (>=1:0)
+Conflicts: xz-utils, com.mc.xz
+Provides: xz-utils
+Filename: https://apt.bingner.com/debs/1443.00/xz_5.2.4-4_iphoneos-arm.deb
+Size: 128578
+MD5sum: 74eb7f8aebc92cad1260292d8b695eac
+SHA1: ba4a9539be17b5b91c514d13ddc65e22e89f31e5
+Section: Archiving
+Priority: required
+Homepage: http://tukaani.org/lzma/
+Description: slower, but better, compression algorithm
+Name: XZ Utils
+Tag: purpose::console, role::hacker
+
+Package: zip
+Version: 2.32-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 728
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: https://apt.bingner.com/debs/1443.00/zip_2.32-1_iphoneos-arm.deb
+Size: 52214
+MD5sum: b1cef31bfb417f23e93861159176af0b
+SHA1: 32ea892c1964f8f6893b0d157b5497aab3769588
+Section: Archiving
+Priority: important
+Multi-Arch: foreign
+Description: standard Windows compression tool
+Tag: purpose::console, role::hacker
+
+Package: zsh
+Version: 5.7.1-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 19192
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses, dpkg (>= 1.18.25-10)
+Filename: https://apt.bingner.com/debs/1443.00/zsh_5.7.1-2_iphoneos-arm.deb
+Size: 1448924
+MD5sum: 6d127d497a117e0e11dd115f7db0210b
+SHA1: 0784dab91d7b9b9c8878b02ed66b4fba6d318438
+Section: Terminal_Support
+Priority: optional
+Description: a shell with interactive features
+Name: Z Shell
+Tag: purpose::console, role::hacker
+
